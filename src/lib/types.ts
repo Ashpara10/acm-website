@@ -1,12 +1,13 @@
 export type TEvent = {
-  id: number;
+  id: string;
   title: string;
-  poster: string;
-  description: string;
+  cover: string;
   date: string;
   time: string;
   mode: string;
-  attendees: number;
+  location: string;
+  attending: number;
   images?: string[];
-  about?: string;
+  description?: string;
+  content?: string;
 };

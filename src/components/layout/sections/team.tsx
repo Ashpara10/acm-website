@@ -1,6 +1,5 @@
 import GithubIcon from "@/components/icons/github-icon";
 import LinkedInIcon from "@/components/icons/linkedin-icon";
-import XIcon from "@/components/icons/x-icon";
 import {
   Card,
   CardContent,
@@ -8,6 +7,7 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
+import { XIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 interface TeamProps {
