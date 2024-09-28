@@ -7,14 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Star } from "lucide-react";
 
 interface ReviewProps {
   image: string;
@@ -27,52 +19,67 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
-    comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+    name: "Priyanka Toke",
+    userName: "President",
+    comment: `Being in ACM has been the most delightful experience of my entire college journey. In August 2023, I unexpectedly became the content head of MU-ACM. The club, the people, and the work quickly became an integral part of my life. I'm so grateful for the opportunity. I gave my all to the organization and was honored to become president. My tenure in both positions has been a total of two years, but the infinite memories will last a lifetime. Here at MU-ACM, we're not just colleagues; we're a family. We're proud to showcase that feeling of camaraderie in our chapter's culture.`,
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    name: "Damita Pathak",
+    userName: "Vice President",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "As Vice President, I'm honored to lead MUACM, building upon its legacy and fostering a culture of innovation and collaboration. Together, we'll elevate MUACM to unprecedented heights, nurturing growth, empowerment, and collective excellence.",
     rating: 4.8,
   },
 
   {
     image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    name: "Anugrah Sharma",
+    userName: "Operations Head",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "As MUACM's Operations Head, I've been dedicated to ensuring our club runs smoothly and efficiently. From managing logistics to coordinating events, I've played a vital role in creating a positive and productive environment for our members.",
     rating: 4.9,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    name: "Vinayak Oberoi",
+    userName: "PR Head",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "As Public Relations and Outreach Head, I've experienced the remarkable unity and dedication of our team. This position has sharpened my leadership skills and helped me grow personally and professionally. I'm proud of what we've achieved together and grateful for the opportunities.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    name: "Vedant Soni",
+    userName: "Secretary",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "As Secretary of the ACM Club, I've collaborated with brilliant peers, organized workshops, and interacted with industry experts. Our club is a launchpad for enthusiasts to develop into skilled professionals. Join us to discover, learn, and grow.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    name: "Tanya Somwanshi",
+    userName: "Treasurer",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
+      "MUACM has been a transformative journey, shaping me from a Technical Executive to Treasurer. The support and camaraderie of my team have been invaluable, and I'm grateful for the experiences and friendships I've gained.",
+    rating: 5.0,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Ashwin Parande",
+    userName: "Technical Head",
+    comment:
+      "As MUACM's Technical Head, I've been privileged to lead and inspire our team to achieve new heights. Together, we've tackled challenging projects, developed innovative solutions, and fostered a collaborative learning environment.",
+    rating: 5.0,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Riddhima Kaushal",
+    userName: "Content Head",
+    comment:
+      "As Content Head, I've witnessed the incredible synergy and dedication of our ACM team. Together, we've fostered a stimulating intellectual environment and built a strong community.",
+    rating: 5.0,
   },
 ];
 
@@ -85,57 +92,40 @@ export const TestimonialSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+          Hear What Our Members Say
         </h2>
       </div>
-
-      <Carousel
-        opts={{
-          align: "start",
-        }}
-        className="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
-      >
-        <CarouselContent>
+      <div className="w-full flex items-center justify-center">
+        <div className="w-full  md:max-w-[80%] grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {reviewList.map((review) => (
-            <CarouselItem
+            <Card
               key={review.name}
-              className="md:basis-1/2 lg:basis-1/3"
+              className="bg-muted/50 hover:scale-105 transition-all cursor-pointer md:last:col-span-2 lg:last:col-span-1 flex flex-col items-start justify-between first:row-span-2 basis-1/2 dark:bg-card "
             >
-              <Card className="bg-muted/50 dark:bg-card">
-                <CardContent className="pt-6 pb-0">
-                  <div className="flex gap-1 pb-6">
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                  </div>
-                  {`"${review.comment}"`}
-                </CardContent>
+              <CardContent className="pt-6 pb-0">
+                {`"${review.comment}"`}
+              </CardContent>
 
-                <CardHeader>
-                  <div className="flex flex-row items-center gap-4">
-                    <Avatar>
-                      <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
-                      />
-                      <AvatarFallback>SV</AvatarFallback>
-                    </Avatar>
+              <CardHeader>
+                <div className="flex flex-row items-center gap-4">
+                  <Avatar>
+                    <AvatarImage
+                      src="https://avatars.githubusercontent.com/u/75042455?v=4"
+                      alt="radix"
+                    />
+                    <AvatarFallback>SV</AvatarFallback>
+                  </Avatar>
 
-                    <div className="flex flex-col">
-                      <CardTitle className="text-lg">{review.name}</CardTitle>
-                      <CardDescription>{review.userName}</CardDescription>
-                    </div>
+                  <div className="flex flex-col">
+                    <CardTitle className="text-lg">{review.name}</CardTitle>
+                    <CardDescription>{review.userName}</CardDescription>
                   </div>
-                </CardHeader>
-              </Card>
-            </CarouselItem>
+                </div>
+              </CardHeader>
+            </Card>
           ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+        </div>
+      </div>
     </section>
   );
 };

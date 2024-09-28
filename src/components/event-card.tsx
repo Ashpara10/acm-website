@@ -1,5 +1,4 @@
 import { TEvent } from "@/lib/types";
-import { motion, Variants } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +8,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "./ui/card";
@@ -30,7 +28,9 @@ const EventCard: FC<TEvent> = ({ title, cover, description, id }) => {
         </div>
       </CardHeader>
       <CardContent className="pt-3 bg-inherit h-full">
-        <CardTitle className="text-2xl font-medium">{title}</CardTitle>
+        <CardTitle className="text-2xl font-medium line-clamp-2">
+          {title}
+        </CardTitle>
         <CardDescription className="mt-2">
           <p className="line-clamp-3">{description}</p>
         </CardDescription>

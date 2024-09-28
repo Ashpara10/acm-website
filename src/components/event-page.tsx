@@ -32,13 +32,13 @@ const EventPage: FC<TEvent> = (event) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col-reverse md:flex-row gap-8">
             {/* Ticket Options */}
-            <div className="space-y-6 max-w-sm sticky top-4 w-full">
-              <Card>
+            <div className="relative space-y-6 lg:max-w-sm  w-full ">
+              <Card className="lg:fixed lg:max-w-sm  w-full">
                 <CardHeader>
                   <CardTitle>Event Details</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="space-y-2 text-sm text-gray-600">
+                  <div className="space-y-2 text-sm ">
                     <div className="flex items-center gap-2">
                       <CalendarIcon className="w-4 h-4" />
                       <span>
@@ -51,43 +51,20 @@ const EventPage: FC<TEvent> = (event) => {
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPinIcon className="w-4 h-4" />
-                      <span>Medicaps University</span>
+                      <span>{event?.location}</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <UsersIcon className="w-4 h-4" />
-                      <span>{event?.attending} people attending</span>
-                    </div>
-                  </div>
-                  <div className="border-t pt-4">
-                    <h3 className="font-semibold mb-2">Ticket Options</h3>
-                    <div className="space-y-4">
-                      <div className="flex justify-between items-center">
-                        <div>
-                          <h4 className="font-medium">General Admission</h4>
-                          <p className="text-sm text-gray-600">
-                            Access to all sessions
-                          </p>
-                        </div>
-                        <span className="font-semibold">$199</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <div>
-                          <h4 className="font-medium">VIP Pass</h4>
-                          <p className="text-sm text-gray-600">
-                            Includes exclusive workshops
-                          </p>
-                        </div>
-                        <span className="font-semibold">$299</span>
-                      </div>
+                      <span>{event?.attending} people attended</span>
                     </div>
                   </div>
                 </CardContent>
-                <CardFooter>
+                {/* <CardFooter>
                   <Button className="w-full">
                     <TicketIcon className="w-4 h-4 mr-2" />
-                    Get Tickets
+                    Register
                   </Button>
-                </CardFooter>
+                </CardFooter> */}
               </Card>
             </div>
             {/* Event Details */}
@@ -97,13 +74,16 @@ const EventPage: FC<TEvent> = (event) => {
                   <CarouselContent>
                     {event?.images?.map((image, index) => {
                       return (
-                        <CarouselItem key={index} className="basis-1/2">
+                        <CarouselItem
+                          key={index}
+                          className="basis-1/2 aspect-video"
+                        >
                           <Image
                             src={image}
                             alt="Event cover"
-                            width={400}
-                            height={400}
-                            className="  object-fill rounded-lg"
+                            width={500}
+                            height={500}
+                            className="aspect-video object-cover rounded-lg"
                           />
                         </CarouselItem>
                       );

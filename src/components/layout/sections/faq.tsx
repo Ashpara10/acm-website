@@ -4,7 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
+import { remark } from "remark";
+import html from "remark-html";
 interface FAQProps {
   question: string;
   answer: string;
@@ -13,27 +14,30 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "Who can join MUACM?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "MUACM is open to all students from Medicaps University, regardless of their major or programming experience. We welcome students of all levels, from beginners to experienced programmers.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+    question: "What kind of activities does MUACM organize?",
+    answer: `MUACM organizes a variety of activities, including:
+- **Workshops and Hackathons**: These events provide hands-on experience and opportunities to learn new technologies.
+- **Coding Competitions**: These competitions test your programming skills and offer a chance to win prizes.
+- **Guest Lectures**: We invite industry experts to share their insights and experiences.
+- **Networking Events**: These events help you connect with other tech enthusiasts and potential employers.`,
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Do I need to have prior programming experience to join MUACM?",
+    answer:
+      "No, prior programming experience is not required to join MUACM. Our goal is to create a welcoming and inclusive environment where students of all levels can learn and grow. We offer resources and support for beginners to help them get started.",
     value: "item-4",
   },
   {
-    question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+    question: "How can I become a member of MUACM?",
+    answer:
+      "To become a member of MUACM, simply fill out the membership form on our website or contact us directly. We will provide you with more information about our activities and how to get involved.",
     value: "item-5",
   },
 ];
@@ -52,15 +56,24 @@ export const FAQSection = () => {
       </div>
 
       <Accordion type="single" collapsible className="AccordionRoot">
-        {FAQList.map(({ question, answer, value }) => (
-          <AccordionItem key={value} value={value}>
-            <AccordionTrigger className="text-left">
-              {question}
-            </AccordionTrigger>
+        {FAQList.map(async ({ question, answer, value }) => {
+          const processedContent = await remark().use(html).process(answer);
+          const contentHtml = processedContent.toString();
+          return (
+            <AccordionItem key={value} value={value}>
+              <AccordionTrigger className="text-left">
+                {question}
+              </AccordionTrigger>
 
-            <AccordionContent>{answer}</AccordionContent>
-          </AccordionItem>
-        ))}
+              <AccordionContent>
+                <div
+                  className="prose dark:prose-invert leading-snug"
+                  dangerouslySetInnerHTML={{ __html: contentHtml }}
+                />
+              </AccordionContent>
+            </AccordionItem>
+          );
+        })}
       </Accordion>
     </section>
   );

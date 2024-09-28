@@ -4,7 +4,7 @@ date: "2024-06-06"
 cover: "/events/dm.jpg"
 time: "02:00 PM - 04:00 PM"
 mode: "online"
-location: "zoom"
+location: "Zoom"
 attending: 56
 description: "Digital Marketing with AI explores the intersection of AI and digital marketing through expert sessions on AI-driven strategies. The recent session offered insights into using AI for personalised campaigns, data-driven decisions, and enhanced customer engagement."
 ---
