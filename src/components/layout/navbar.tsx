@@ -22,6 +22,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
+import { usePathname } from "next/navigation";
 
 interface RouteProps {
   href: string;
@@ -35,19 +36,23 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#about",
+    href: "/#about",
     label: "About",
   },
   {
-    href: "#testimonials",
+    href: "/events",
+    label: "Events",
+  },
+  {
+    href: "/#testimonials",
     label: "Testimonials",
   },
   {
-    href: "#team",
+    href: "/#team",
     label: "Team",
   },
   {
-    href: "#faq",
+    href: "/#faq",
     label: "FAQ",
   },
 ];
@@ -71,12 +76,11 @@ const featureList: FeatureProps[] = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const path = usePathname();
   return (
-    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
+    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[80%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card/50 backdrop-blur-lg">
       <Link href="/" className="font-bold text-lg flex items-center">
         <Image src="/logo.png" alt="logo" width={60} height={60} />
-        {/* <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Shadcn */}
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -176,7 +180,11 @@ export const Navbar = () => {
         <ToggleTheme />
 
         <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
-          <Link aria-label="View on GitHub" href="#">
+          <Link
+            aria-label="View on GitHub"
+            href="https://github.com/Ashpara10/acm-website"
+            target="_blank"
+          >
             <Github className="size-5" />
           </Link>
         </Button>
