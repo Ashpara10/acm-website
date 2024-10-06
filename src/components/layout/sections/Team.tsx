@@ -24,86 +24,98 @@ interface SocialNetworkProps {
 export const TeamSection = () => {
   const teamList: TeamProps[] = [
     {
-      imageUrl: "https://i.pravatar.cc/250?img=58",
-      firstName: "Leo",
-      lastName: "Miranda",
-      positions: ["Vue Fronted Developer", "Creator Of This Website"],
+      imageUrl: "/team/priyanka.jpg",
+      firstName: "Priyanka",
+      lastName: "Toke",
+      positions: ["President"],
       socialNetworks: [
         {
           name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
+          url: "https://www.linkedin.com/in/priyanka-toke-762838215/",
+        },
+      ],
+    },
+    {
+      imageUrl: "/team/damita.jpg",
+      firstName: "Damita",
+      lastName: "Pathak",
+      positions: ["Vice President"],
+      socialNetworks: [
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/damita-pathak-4956262a2/",
+        },
+      ],
+    },
+    {
+      imageUrl: "/team/tanya.jpg",
+      firstName: "Tanya ",
+      lastName: "Somwanshi",
+      positions: ["Treasurer"],
+      socialNetworks: [
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/tanya-somwanshi-277220248/",
+        },
+      ],
+    },
+    {
+      imageUrl: "/team/vedant2.jpg",
+      firstName: "Vedant",
+      lastName: "Soni",
+      positions: ["Secretary"],
+      socialNetworks: [
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/vedant-soni-504568249/",
+        },
+      ],
+    },
+    {
+      imageUrl: "/team/ashwin.jpg",
+      firstName: "Ashwin ",
+      lastName: "Parande",
+      positions: ["Technical Head"],
+      socialNetworks: [
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/ashwin-parande-657653294/",
         },
         {
           name: "Github",
-          url: "https://github.com/leoMirandaa",
-        },
-        {
-          name: "X",
-          url: "https://x.com/leo_mirand4",
+          url: "https://github.com/Ashpara10/",
         },
       ],
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      firstName: "Elizabeth",
-      lastName: "Moore",
-      positions: ["UI/UX Designer"],
+      imageUrl: "/team/anugrah2.jpg",
+      firstName: "Anugrah",
+      lastName: "Sharma",
+      positions: ["Operations Head"],
       socialNetworks: [
         {
           name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "X",
-          url: "https://x.com/leo_mirand4",
+          url: "https://www.linkedin.com/in/anu-g-rah/",
         },
       ],
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      firstName: "David",
-      lastName: "Diaz",
-      positions: ["Machine Learning Engineer", "TensorFlow Tinkerer"],
+      imageUrl: "/team/vinayak.jpg",
+      firstName: "Vinayak",
+      lastName: "Oberoi",
+      positions: ["PR Head"],
       socialNetworks: [
         {
           name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "Github",
-          url: "https://github.com/leoMirandaa",
+          url: "https://www.linkedin.com/in/vinayak-oberoi-a26ba22b0/",
         },
       ],
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      firstName: "Sarah",
-      lastName: "Robinson",
-      positions: ["Cloud Native Developer", " Kubernetes Orchestrator"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "Github",
-          url: "https://github.com/leoMirandaa",
-        },
-        {
-          name: "X",
-          url: "https://x.com/leo_mirand4",
-        },
-      ],
-    },
-    {
-      imageUrl:
-        "https://images.unsplash.com/photo-1616805765352-beedbad46b2a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      firstName: "Michael",
-      lastName: "Holland",
-      positions: ["DevOps Engineer", "CI/CD Pipeline Mastermind"],
+      imageUrl: "/team/riddhima.jpg",
+      firstName: "Riddhima ",
+      lastName: "Kaushal",
+      positions: ["Content Head"],
       socialNetworks: [
         {
           name: "LinkedIn",
@@ -112,53 +124,14 @@ export const TeamSection = () => {
       ],
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      firstName: "Zoe",
-      lastName: "Garcia",
-      positions: ["JavaScript Evangelist", "Deno Champion"],
+      imageUrl: "/team/hemant.jpg",
+      firstName: "Hemant",
+      lastName: "Sharma",
+      positions: ["Graphics Head"],
       socialNetworks: [
         {
           name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "Github",
-          url: "https://github.com/leoMirandaa",
-        },
-      ],
-    },
-    {
-      imageUrl:
-        "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      firstName: "Evan",
-      lastName: "James",
-      positions: ["Backend Developer"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "Github",
-          url: "https://github.com/leoMirandaa",
-        },
-        {
-          name: "X",
-          url: "https://x.com/leo_mirand4",
-        },
-      ],
-    },
-    {
-      imageUrl:
-        "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      firstName: "Pam",
-      lastName: "Taylor",
-      positions: ["Fullstack Developer", "UX Researcher"],
-      socialNetworks: [
-        {
-          name: "X",
-          url: "https://x.com/leo_mirand4",
+          url: "https://www.linkedin.com/in/hemant-sharma-3135b4290/",
         },
       ],
     },
@@ -178,7 +151,7 @@ export const TeamSection = () => {
     <section id="team" className="container lg:w-[75%] py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Team
+          Our Core Team
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
@@ -186,7 +159,7 @@ export const TeamSection = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {teamList.map(
           (
             { imageUrl, firstName, lastName, positions, socialNetworks },
@@ -206,9 +179,9 @@ export const TeamSection = () => {
                     className="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
                   />
                 </div>
-                <CardTitle className="py-6 pb-4 px-6">
+                <CardTitle className="py-3 pb-4 px-6">
                   {firstName}
-                  <span className="text-primary ml-2">{lastName}</span>
+                  <span className="text-primary ml-1">{lastName}</span>
                 </CardTitle>
               </CardHeader>
               {positions.map((position, index) => (

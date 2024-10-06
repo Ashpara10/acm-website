@@ -13,7 +13,7 @@ type Props = {
   params: { id: string };
 };
 
-async function getPostData(name: string) {
+ async function getPostData(name: string) {
   const fullPath = path.join(postsDirectory, `${name}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
