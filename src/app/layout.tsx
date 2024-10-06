@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ACM",
-  description: "Landing template for ACM ",
+  title: "MUACM",
+  description: "MUACM - Medicaps University ACM Student Chapter",
 };
 
 export default function RootLayout({
