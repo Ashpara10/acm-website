@@ -14,30 +14,32 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Who can join MUACM?",
+    question: "Who can join MU-ACM?",
     answer:
-      "MUACM is open to all students from Medicaps University, regardless of their major or programming experience. We welcome students of all levels, from beginners to experienced programmers.",
+      " Any student of Medi-Caps University regardless of their domain can apply to join the team of MU-ACM Student Chapter during the official recruitment process. People from all over the world can become a part of our community and join our WhatsApp group. Our webinars and online sessions are open for everyone across the globe.",
     value: "item-2",
   },
   {
-    question: "What kind of activities does MUACM organize?",
-    answer: `MUACM organizes a variety of activities, including:
-- **Workshops and Hackathons**: These events provide hands-on experience and opportunities to learn new technologies.
-- **Coding Competitions**: These competitions test your programming skills and offer a chance to win prizes.
-- **Guest Lectures**: We invite industry experts to share their insights and experiences.
-- **Networking Events**: These events help you connect with other tech enthusiasts and potential employers.`,
+    question: "What kind of activities does MU-ACM organize?",
+    answer: `MU-ACM organizes a variety of activities, including:
+- **Workshops**: Hands-on project making sessions to provide a practical experience of the topic under study.
+- **Expert Lectures**: Lectures from prominent speakers to dive deep into trendy tech topics. 
+
+- **Webinars**: Creative online sessions through Zoom Premium which can be joined by anyone across the globe.
+
+- **Competitions**: Interesting competitions to promote the love for tech in a fun way and provide a chance to students win amazing prizes.`,
     value: "item-3",
   },
   {
-    question: "Do I need to have prior programming experience to join MUACM?",
+    question: "Do I need to have prior programming experience to join MU-ACM?",
     answer:
-      "No, prior programming experience is not required to join MUACM. Our goal is to create a welcoming and inclusive environment where students of all levels can learn and grow. We offer resources and support for beginners to help them get started.",
+      "No, prior programming experience is not required to join MU-ACM. Our goal is to create a welcoming and inclusive environment where students of all levels can learn and grow. We offer resources and support for beginners to help them get started.",
     value: "item-4",
   },
   {
-    question: "How can I become a member of MUACM?",
+    question: "How can I become a member of MU-ACM?",
     answer:
-      "To become a member of MUACM, simply fill out the membership form on our website or contact us directly. We will provide you with more information about our activities and how to get involved.",
+      "You can connect with us on our social media handles and join our WhatsApp community. To be a part of our team you have to apply in our formal recruitment procedure which generally takes place around August- September every year.",
     value: "item-5",
   },
 ];

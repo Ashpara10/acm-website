@@ -8,8 +8,8 @@ import { TeamSection } from "@/components/layout/sections/Team";
 import { TestimonialSection } from "@/components/layout/sections/Testimonial";
 
 export const metadata = {
-  title: "MUACM",
-  description: "MUACM - Medicaps University ACM Student Chapter",
+  title: "MU-ACM",
+  description: "MU-ACM - Medicaps University ACM Student Chapter",
 };
 
 export default function Home() {
