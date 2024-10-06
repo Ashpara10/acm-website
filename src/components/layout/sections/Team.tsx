@@ -7,7 +7,7 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { XIcon } from "lucide-react";
+import { InstagramIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 interface TeamProps {
@@ -44,6 +44,10 @@ export const TeamSection = () => {
         {
           name: "LinkedIn",
           url: "https://www.linkedin.com/in/damita-pathak-4956262a2/",
+        },
+        {
+          name: "Instagram",
+          url: "https://www.instagram.com/damitapathak/profilecard/?igsh=MWZ0NDUxYzUyNHhrOQ==",
         },
       ],
     },
@@ -85,6 +89,10 @@ export const TeamSection = () => {
           name: "Github",
           url: "https://github.com/Ashpara10/",
         },
+        {
+          name: "Instagram",
+          url: "https://www.instagram.com/ashhhwwinnn/",
+        },
       ],
     },
     {
@@ -119,7 +127,7 @@ export const TeamSection = () => {
       socialNetworks: [
         {
           name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
+          url: "https://www.linkedin.com/in/riddhima-kaushal-17092005rk/",
         },
       ],
     },
@@ -135,6 +143,42 @@ export const TeamSection = () => {
         },
       ],
     },
+    {
+      imageUrl: "/team/aadeesh.jpg",
+      firstName: "Aadeesh",
+      lastName: " Jain",
+      positions: ["Video Editing Head"],
+      socialNetworks: [
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/aadeesh-jain-486a882a3/",
+        },
+      ],
+    },
+    {
+      imageUrl: "/team/kasak.jpg",
+      firstName: "Kasak",
+      lastName: "Tolani",
+      positions: ["PR Co-Head"],
+      socialNetworks: [
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/kasak-tolani-51b5212aa/",
+        },
+      ],
+    },
+    {
+      imageUrl: "/team/sakshi.jpg",
+      firstName: "Sakshi",
+      lastName: "Patil",
+      positions: ["Operations Co-Head"],
+      socialNetworks: [
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/sakshi-patil-617803220/",
+        },
+      ],
+    },
   ];
   const socialIcon = (socialName: string) => {
     switch (socialName) {
@@ -144,6 +188,8 @@ export const TeamSection = () => {
         return <GithubIcon />;
       case "X":
         return <XIcon />;
+      case "Instagram":
+        return <InstagramIcon />;
     }
   };
 
