@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Understanding Open Source
+![opengraph 9dc60c9d](https://github.com/user-attachments/assets/50bdc4c9-1cd2-45cd-84b5-1ec362f8e903)
 
-## Getting Started
+# Contribution Rules📚:
 
-First, run the development server:
+- You are allowed to make pull requests that break the rules. We just merge it ;)
+- Do NOT add any build steps, e.g., npm install (we want to keep this a simple static site)
+- Do NOT remove other content.
+- Styling/code can be pretty, ugly, or stupid, big or small, as long as it works
+<!-- - Add your name to the contributorsList file. -->
+- Try to keep pull requests small to minimize merge conflicts
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  ## Getting Started 🤩🤗:
+
+- Fork this repo (button on top)
+- Clone it on your local machine
+
+```terminal
+git clone https://github.com/Ashpara10/acm-website.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Navigate to the project directory.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```terminal
+cd acm-website
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Create a new branch
 
-## Learn More
+```markdown
+git checkout -b my-new-branch
+```
+- Stage your changes 
+<!--- - Add your name to `contributors/contributorsList.js`. -->
 
-To learn more about Next.js, take a look at the following resources:
+```markdown
+git add .
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Commit your changes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```markdown
+git commit -m "Relevant message"
+```
 
-## Deploy on Vercel
+- Then push
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```markdown
+git push origin my-new-branch
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Create a new pull request from your forked repository
+
+<br>
+
+## Avoid Conflicts {Syncing your fork}
+
+An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PRs may be merged while you're working on your branch/fork.   
+
+```terminal
+git remote add upstream https://github.com/Ashpara10/acm-website.git
+```
+
+You can verify that the new remote has been added by typing:
+
+```terminal
+git remote -v
+```
+
+To pull any new changes from your parent repo, simply run:
+
+```terminal
+git merge upstream/master
+```
+
+This will give you any eventual conflicts and allow you to easily solve them in your repo. It's a good idea to use it frequently in between your own commits to make sure that your repo is up to date with its parent.
+
+For more information on syncing forks, [read this article from GitHub](https://help.github.com/articles/syncing-a-fork/).
+
+## Our Top Contributors 
