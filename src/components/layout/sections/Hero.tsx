@@ -21,7 +21,7 @@ export const HeroSection = () => {
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
-              Technical Community of
+              Technical Community for
               <span className="text-transparent px-2 bg-gradient-to-r from-[#47c2d2] to-primary bg-clip-text">
                 Students
               </span>
