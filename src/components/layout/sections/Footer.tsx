@@ -1,8 +1,16 @@
+import DiscordIcon from "@/components/icons/discord-icon";
+import LinkedInIcon from "@/components/icons/linkedin-icon";
 import { Separator } from "@/components/ui/separator";
+import InstagramIcon from "@/components/icons/instagram-icon";
 import Image from "next/image";
 import Link from "next/link";
+import WhatsappIcon from "@/components/icons/whatsapp-icon";
 
 export const FooterSection = () => {
+  const socialIconProps = {
+    width: "28px",
+    height: "28px",
+  };
   return (
     <footer id="footer" className="container py-24 sm:py-32">
       <div className="p-10 bg-card border border-secondary rounded-2xl">
@@ -13,16 +21,14 @@ export const FooterSection = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
+          <div className="flex items-center gap-5">
             <div>
               <Link
-                href="https://chat.whatsapp.com/GgpDcfZc8KwJambREQf823
-"
+                href="https://chat.whatsapp.com/GgpDcfZc8KwJambREQf823"
                 target="_blank"
                 className="opacity-60 hover:opacity-100"
               >
-                Whatsapp
+                <WhatsappIcon {...socialIconProps} />
               </Link>
             </div>
             <div>
@@ -31,7 +37,7 @@ export const FooterSection = () => {
                 target="_blank"
                 className="opacity-60 hover:opacity-100"
               >
-                Discord
+                <DiscordIcon {...socialIconProps} />
               </Link>
             </div>
 
@@ -41,7 +47,7 @@ export const FooterSection = () => {
                 className="opacity-60 hover:opacity-100"
                 target="_blank"
               >
-                Linkedin
+                <LinkedInIcon {...socialIconProps} />
               </Link>
             </div>
 
@@ -51,7 +57,7 @@ export const FooterSection = () => {
                 className="opacity-60 hover:opacity-100"
                 target="_blank"
               >
-                Instagram
+                <InstagramIcon {...socialIconProps} />
               </Link>
             </div>
           </div>
