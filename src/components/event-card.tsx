@@ -19,7 +19,7 @@ const EventCard: FC<TEvent> = ({ title, cover, description, id }) => {
         <div className="h-full max-h-[200px] overflow-hidden w-full">
           <Image
             src={cover}
-            alt=""
+            alt="Event cover image"
             className="aspect-square w-full"
             width={300}
             height={300}
@@ -27,14 +27,16 @@ const EventCard: FC<TEvent> = ({ title, cover, description, id }) => {
           />
         </div>
       </CardHeader>
-      <CardContent className="pt-3 bg-inherit h-full">
-        <CardTitle className="text-2xl font-medium line-clamp-2">
-          {title}
-        </CardTitle>
-        <CardDescription className="mt-2">
-          <p className="line-clamp-3">{description}</p>
-        </CardDescription>
-        <Link href={`/events/${id}`} className="justify-self-end">
+      <CardContent className="pt-3 bg-inherit h-full flex flex-col">
+        <div className="flex-grow">
+          <CardTitle className="text-2xl font-medium line-clamp-2">
+            {title}
+          </CardTitle>
+          <CardDescription className="mt-2">
+            <p className="line-clamp-3">{description}</p>
+          </CardDescription>
+        </div>
+        <Link href={`/events/${id}`} className="mt-auto">
           <Button className="w-full mt-3">
             View Event <ChevronRight className="size-5 ml-2 opacity-80" />
           </Button>
@@ -43,4 +45,5 @@ const EventCard: FC<TEvent> = ({ title, cover, description, id }) => {
     </Card>
   );
 };
+
 export default EventCard;
