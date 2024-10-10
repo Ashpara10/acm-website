@@ -17,7 +17,7 @@ export const CommunitySection = () => {
           <Card className="bg-background border-none shadow-none text-center flex flex-col items-center justify-center">
             <CardHeader>
               <CardTitle className="text-4xl md:text-5xl font-bold flex flex-col items-center">
-                <DiscordIcon width="80px" className="mb-4" />
+                <DiscordIcon className="mb-4" />
                 <div>
                   Ready to join this
                   <span className="text-transparent pl-2 bg-gradient-to-r from-[#47c2d2] to-primary bg-clip-text">

@@ -1,7 +1,5 @@
 import GithubIcon from "@/components/icons/github-icon";
-import InstagramIcon from "@/components/icons/instagram-icon";
 import LinkedInIcon from "@/components/icons/linkedin-icon";
-import XIcon from "@/components/icons/x-icon";
 import {
   Card,
   CardContent,
@@ -9,6 +7,7 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
+import { InstagramIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 interface TeamProps {
@@ -182,19 +181,15 @@ export const TeamSection = () => {
     },
   ];
   const socialIcon = (socialName: string) => {
-    const iconSVGAttributes = {
-      width: "24px",
-      height: "24px",
-    };
     switch (socialName) {
       case "LinkedIn":
-        return <LinkedInIcon {...iconSVGAttributes} />;
+        return <LinkedInIcon />;
       case "Github":
-        return <GithubIcon {...iconSVGAttributes} />;
+        return <GithubIcon />;
       case "X":
-        return <XIcon {...iconSVGAttributes} />;
+        return <XIcon />;
       case "Instagram":
-        return <InstagramIcon {...iconSVGAttributes} />;
+        return <InstagramIcon />;
     }
   };
 
