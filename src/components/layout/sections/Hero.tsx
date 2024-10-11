@@ -5,12 +5,15 @@ import { ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 export const HeroSection = () => {
   const { theme } = useTheme();
   return (
-    <section className="container w-full">
-      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
+    <section className="relative w-full min-h-screen overflow-hidden">
+      <BackgroundBeams />
+
+      <div className="relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32 min-h-screen">
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2">
             <span className="mr-2 text-primary">
