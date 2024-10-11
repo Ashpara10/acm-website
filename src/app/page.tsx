@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/layout/sections/Hero";
 import { SponsorsSection } from "@/components/layout/sections/Sponsors";
 import { TeamSection } from "@/components/layout/sections/Team";
 import { TestimonialSection } from "@/components/layout/sections/Testimonial";
+import {TextHoverEffectSection} from "@/components/layout/sections/TextHoverEffectSection"
 
 export const metadata = {
   title: "MU-ACM",
@@ -22,6 +23,7 @@ export default function Home() {
       <TestimonialSection />
       <CommunitySection />
       <FAQSection />
+      <TextHoverEffectSection />
       <FooterSection />
     </>
   );
