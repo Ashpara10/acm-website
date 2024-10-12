@@ -1,14 +1,10 @@
 "use client";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { useTheme } from "next-themes";
-import Image from "next/image";
-import Link from "next/link";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export const HeroSection = () => {
-  const { theme } = useTheme();
+  //const { theme } = useTheme();
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
       <BackgroundBeams />
