@@ -79,9 +79,15 @@ export const Navbar = () => {
   const path = usePathname();
   return (
     <header className="container sticky top-5 z-40">
-      <nav className="shadow-inner bg-opacity-15  border border-secondary rounded-2xl flex justify-between items-center py-2 px-4 bg-card/50 backdrop-blur-lg">
+      <nav className="shadow-inner bg-opacity-15  border border-secondary rounded-2xl flex justify-between items-center py-2 px-2.5 md:px-4 bg-card/50 backdrop-blur-lg">
         <Link href="/" className="font-bold text-lg flex items-center">
-          <Image src="/logo.png" alt="logo" width={60} height={60} />
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={60}
+            height={60}
+            className="w-[50px] md:w-[60px]"
+          />
         </Link>
         {/* <!-- Mobile --> */}
         <div className="flex items-center lg:hidden">
