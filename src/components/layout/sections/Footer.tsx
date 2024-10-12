@@ -7,21 +7,26 @@ import Link from "next/link";
 import WhatsappIcon from "@/components/icons/whatsapp-icon";
 
 export const FooterSection = () => {
-  const socialIconProps = {
-    width: "28px",
-    height: "28px",
+  const socialIconProps: React.SVGProps<SVGSVGElement> = {
+    className: "w-[24px] h-[24px] md:w-[28px] md:h-[28px]",
   };
   return (
-    <footer id="footer" className="container py-24 sm:py-32">
-      <div className="p-10 bg-card border border-secondary rounded-2xl">
+    <footer id="footer" className="container py-10 md:py-32">
+      <div className="px-4 py-6 md:p-10 bg-card border border-secondary rounded-2xl">
         <div className="flex justify-between items-center">
           <div className="col-span-full md:col-span-1">
             <Link href="#" className="flex font-bold items-center">
-              <Image src="/logo.png" alt="logo" width={60} height={60} />
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={60}
+                height={60}
+                className="w-[50px] md:w-[60px]"
+              />
             </Link>
           </div>
 
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-4 md:gap-5">
             <div>
               <Link
                 href="https://chat.whatsapp.com/GgpDcfZc8KwJambREQf823"
