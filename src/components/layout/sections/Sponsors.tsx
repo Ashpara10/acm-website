@@ -38,7 +38,7 @@ export const SponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
       <h2 className="text-lg md:text-3xl text-center mb-6 font-bold">
-        Our Amazing Events
+        Our Past Events
       </h2>
 
       <div className="mx-auto">
