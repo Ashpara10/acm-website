@@ -1,6 +1,17 @@
 "use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
 import React from "react";
+import { Menu } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import GithubIcon from "../icons/github-icon";
+import { Button } from "../ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+} from "../ui/navigation-menu";
+import { Separator } from "../ui/separator";
 import {
   Sheet,
   SheetContent,
@@ -9,30 +20,17 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
-import { Separator } from "../ui/separator";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "../ui/navigation-menu";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
-import { usePathname } from "next/navigation";
 
 interface RouteProps {
   href: string;
   label: string;
 }
 
-interface FeatureProps {
-  title: string;
-  description: string;
-}
+// interface FeatureProps {
+//   title: string;
+//   description: string;
+// }
 
 const routeList: RouteProps[] = [
   {
@@ -57,26 +55,26 @@ const routeList: RouteProps[] = [
   },
 ];
 
-const featureList: FeatureProps[] = [
-  {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
-  },
-  {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
-  },
-  {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
-  },
-];
+// const featureList: FeatureProps[] = [
+//   {
+//     title: "Showcase Your Value ",
+//     description: "Highlight how your product solves user problems.",
+//   },
+//   {
+//     title: "Build Trust",
+//     description:
+//       "Leverages social proof elements to establish trust and credibility.",
+//   },
+//   {
+//     title: "Capture Leads",
+//     description:
+//       "Make your lead capture form visually appealing and strategically.",
+//   },
+// ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const path = usePathname();
+  //const path = usePathname();
   return (
     <header className="container sticky top-5 z-40">
       <nav className="shadow-inner bg-opacity-15  border border-secondary rounded-2xl flex justify-between items-center py-2 px-2.5 md:px-4 bg-card/50 backdrop-blur-lg">
@@ -197,7 +195,7 @@ export const Navbar = () => {
               href="https://github.com/Ashpara10/acm-website"
               target="_blank"
             >
-              <Github className="size-5" />
+              <GithubIcon className="size-5" />
             </Link>
           </Button>
         </div>

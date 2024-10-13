@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-interface BenefitsProps {
-  icon: string;
-  title: string;
-  description: string;
-}
+// interface BenefitsProps {
+//   icon: string;
+//   title: string;
+//   description: string;
+// }
 
 export const BenefitsSection = () => {
   return (

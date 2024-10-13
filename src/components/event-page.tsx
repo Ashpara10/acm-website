@@ -1,29 +1,10 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TEvent } from "@/lib/types";
 import { getDateInSpecifiedFormat } from "@/lib/utils";
-import {
-  CalendarIcon,
-  ClockIcon,
-  MapPinIcon,
-  TicketIcon,
-  UsersIcon,
-} from "lucide-react";
+import { CalendarIcon, ClockIcon, MapPinIcon, UsersIcon } from "lucide-react";
 import Image from "next/image";
 import { FC } from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
-import { Button } from "./ui/button";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 
 const EventPage: FC<TEvent> = (event) => {
   return (
@@ -92,7 +73,7 @@ const EventPage: FC<TEvent> = (event) => {
                 </Carousel>
               ) : (
                 <Image
-                  src={event?.cover!}
+                  src={event?.cover}
                   alt="Event cover"
                   width={800}
                   height={400}
@@ -103,7 +84,7 @@ const EventPage: FC<TEvent> = (event) => {
                 <h2 className="text-3xl font-semibold">{event?.title}</h2>
                 <div
                   className="prose dark:prose-invert"
-                  dangerouslySetInnerHTML={{ __html: event?.content! }}
+                  dangerouslySetInnerHTML={{ __html: event.content! }}
                 />
               </div>
             </div>

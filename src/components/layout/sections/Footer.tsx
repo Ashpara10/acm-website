@@ -1,3 +1,4 @@
+import React, { SVGProps } from "react";
 import DiscordIcon from "@/components/icons/discord-icon";
 import LinkedInIcon from "@/components/icons/linkedin-icon";
 import { Separator } from "@/components/ui/separator";
@@ -7,7 +8,7 @@ import Link from "next/link";
 import WhatsappIcon from "@/components/icons/whatsapp-icon";
 
 export const FooterSection = () => {
-  const socialIconProps: React.SVGProps<SVGSVGElement> = {
+  const socialIconProps: SVGProps<SVGSVGElement> = {
     className: "w-[24px] h-[24px] md:w-[28px] md:h-[28px]",
   };
   return (

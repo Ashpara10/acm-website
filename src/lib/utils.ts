@@ -29,7 +29,7 @@ export function getDateInSpecifiedFormat(date: Date) {
     day: "numeric",
   };
 
-  return new Intl.DateTimeFormat("en-US", options as any).format(date);
+  return new Intl.DateTimeFormat("en-US", options as object).format(date);
 }
 
 export const postsDirectory = path.join(process.cwd(), "src/data/events");
@@ -56,7 +56,6 @@ export function getSortedPostsData() {
   });
   // Sort posts by date
   return allPostsData.sort((a, b) => {
-    // @ts-ignore
     if (new Date(a.date) < new Date(b.date)) {
       return 1;
     } else {

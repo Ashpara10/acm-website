@@ -1,9 +1,7 @@
 "use client";
 
-import { Icon } from "@/components/ui/icon";
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
-import { icons } from "lucide-react";
 interface sponsorsProps {
   icon: string;
   name: string;
@@ -50,7 +48,7 @@ export const SponsorsSection = () => {
           innerClassName="gap-[3rem]"
           pauseOnHover
         >
-          {sponsors.map(({ icon, name }) => (
+          {sponsors.map(({ name }) => (
             <div
               key={name}
               className="flex items-center text-xl md:text-2xl font-medium"
