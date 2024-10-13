@@ -32,8 +32,8 @@ const EventCard: FC<TEvent> = ({ title, cover, description, id }) => {
           <CardTitle className="text-2xl font-medium line-clamp-2">
             {title}
           </CardTitle>
-          <CardDescription className="mt-2">
-            <p className="line-clamp-3">{description}</p>
+          <CardDescription className="mt-2 line-clamp-3">
+            {description}
           </CardDescription>
         </div>
         <Link href={`/events/${id}`} className="mt-auto">
