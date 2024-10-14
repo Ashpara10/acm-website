@@ -1,5 +1,6 @@
 ---
 title: "Fastn Workshop"
+status: "COMPLETED"
 date: "2023-10-06"
 cover: "/events/fastn.jpg"
 time: "02:00 PM - 05:00 PM"

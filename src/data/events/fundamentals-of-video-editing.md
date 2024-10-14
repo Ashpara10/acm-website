@@ -1,5 +1,6 @@
 ---
 title: "Fundamentals of Video Editing"
+status: "COMPLETED"
 date: "2024-06-19"
 cover: "/events/editing.jpg"
 time: "02:00 PM - 04:00 PM"

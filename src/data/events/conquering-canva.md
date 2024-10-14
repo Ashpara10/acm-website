@@ -1,5 +1,6 @@
 ---
 title: "Conquering Canva"
+status: "COMPLETED"
 date: "2024-05-22"
 cover: "/events/canva.jpg"
 time: "02:00 PM - 04:00 PM"
