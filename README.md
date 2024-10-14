@@ -16,7 +16,7 @@
 - Clone it on your local machine
 
 ```terminal
-git clone https://github.com/Ashpara10/acm-website.git
+git clone https://github.com/<your-username>/acm-website.git
 ```
 
 - Navigate to the project directory.
@@ -58,7 +58,7 @@ git push origin my-new-branch
 An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PRs may be merged while you're working on your branch/fork.   
 
 ```terminal
-git remote add upstream https://github.com/Ashpara10/acm-website.git
+git remote add upstream https://github.com/<your-username>/acm-website.git
 ```
 
 You can verify that the new remote has been added by typing:
