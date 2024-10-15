@@ -1,5 +1,6 @@
 ---
 title: "Technical Tambola 3.0"
+status: "COMPLETED"
 date: "2024-03-21"
 cover: "/events/tambola.jpg"
 time: "10:30 AM - 12:30 PM"

@@ -1,5 +1,6 @@
 ---
 title: "Basics Of Javascript"
+status: "COMPLETED"
 date: "2024-09-14"
 cover: "/events/basics-of-js.jpg"
 time: "02:00 PM - 03:00 PM"

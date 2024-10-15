@@ -1,5 +1,6 @@
 ---
 title: "Leveraging AI Tools in Digital Marketing"
+status: "COMPLETED"
 date: "2024-06-06"
 cover: "/events/dm.jpg"
 time: "02:00 PM - 04:00 PM"

@@ -1,5 +1,6 @@
 ---
 title: "AInnovate Workshop"
+status: "COMPLETED"
 date: "2023-11-20"
 cover: "/events/ainnovate.jpg"
 time: "02:00 PM - 05:00 PM"
