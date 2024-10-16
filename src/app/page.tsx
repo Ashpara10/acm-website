@@ -6,6 +6,7 @@ import { FooterSection } from "@/components/layout/sections/Footer";
 import { HeroSection } from "@/components/layout/sections/Hero";
 import { SponsorsSection } from "@/components/layout/sections/Sponsors";
 import { TeamSection } from "@/components/layout/sections/Team";
+import { Mentors } from "@/components/layout/sections/Mentors";
 import { TestimonialSection } from "@/components/layout/sections/Testimonial";
 import { TextHoverEffectSection } from "@/components/layout/sections/TextHoverEffectSection";
 import { getSortedPostsData } from "@/lib/utils";
@@ -27,6 +28,7 @@ export default function Home() {
       <BenefitsSection />
       <Events data={data} />
       <TeamSection />
+      <Mentors />
       <TestimonialSection />
       <CommunitySection />
       <FAQSection />
