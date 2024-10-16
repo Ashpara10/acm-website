@@ -18,14 +18,14 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
+    image: "/team/priyanka.jpg",
     name: "Priyanka Toke",
     userName: "President",
     comment: `Being in ACM has been the most delightful experience of my entire college journey. In August 2023, I unexpectedly became the content head of MU-ACM. The club, the people, and the work quickly became an integral part of my life. I'm so grateful for the opportunity. I gave my all to the organization and was honored to become president. My tenure in both positions has been a total of two years, but the infinite memories will last a lifetime. Here at MU-ACM, we're not just colleagues; we're a family. We're proud to showcase that feeling of camaraderie in our chapter's culture.`,
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/team/damita.jpg",
     name: "Damita Pathak",
     userName: "Vice President",
     comment:
@@ -34,7 +34,7 @@ const reviewList: ReviewProps[] = [
   },
 
   {
-    image: "https://github.com/shadcn.png",
+    image: "/team/anugrah2.jpg",
     name: "Anugrah Sharma",
     userName: "Operations Head",
     comment:
@@ -42,7 +42,7 @@ const reviewList: ReviewProps[] = [
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/team/vinayak.jpg",
     name: "Vinayak Oberoi",
     userName: "PR Head",
     comment:
@@ -50,7 +50,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/team/vedant2.jpg",
     name: "Vedant Soni",
     userName: "Secretary",
     comment:
@@ -58,7 +58,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/team/tanya.jpg",
     name: "Tanya Somwanshi",
     userName: "Treasurer",
     comment:
@@ -66,7 +66,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/team/ashwin.jpg",
     name: "Ashwin Parande",
     userName: "Technical Head",
     comment:
@@ -74,7 +74,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/team/riddhima.jpg",
     name: "Riddhima Kaushal",
     userName: "Content Head",
     comment:
@@ -97,7 +97,7 @@ export const TestimonialSection = () => {
       </div>
       <div className="w-full flex items-center justify-center">
         <div className="w-full  md:max-w-[80%] grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {reviewList.map((review) => (
+          {reviewList?.map((review) => (
             <Card
               key={review.name}
               className="bg-muted/50 hover:scale-105 transition-all cursor-pointer md:last:col-span-2 lg:last:col-span-1 flex flex-col items-start justify-between first:row-span-2 basis-1/2 dark:bg-card "
@@ -109,10 +109,7 @@ export const TestimonialSection = () => {
               <CardHeader>
                 <div className="flex flex-row items-center gap-4">
                   <Avatar>
-                    <AvatarImage
-                      src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                      alt="radix"
-                    />
+                    <AvatarImage src={review.image} alt="radix" />
                     <AvatarFallback>SV</AvatarFallback>
                   </Avatar>
 
