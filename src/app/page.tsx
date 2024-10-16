@@ -5,7 +5,7 @@ import { FAQSection } from "@/components/layout/sections/Faq";
 import { FooterSection } from "@/components/layout/sections/Footer";
 import { HeroSection } from "@/components/layout/sections/Hero";
 import { SponsorsSection } from "@/components/layout/sections/Sponsors";
-import { TeamSection } from "@/components/layout/sections/Team";
+import { TeamSection } from "@/components/layout/sections/CoreCouncil";
 import { Mentors } from "@/components/layout/sections/Mentors";
 import { TestimonialSection } from "@/components/layout/sections/Testimonial";
 import { TextHoverEffectSection } from "@/components/layout/sections/TextHoverEffectSection";

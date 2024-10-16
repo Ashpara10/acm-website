@@ -1,50 +1,26 @@
-import GithubIcon from "@/components/icons/github-icon";
-import InstagramIcon from "@/components/icons/instagram-icon";
-import LinkedInIcon from "@/components/icons/linkedin-icon";
-import XIcon from "@/components/icons/x-icon";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
-import { councilCoreData } from "@/data/team/CouncilCore.data";
-import Image from "next/image";
-import Link from "next/link";
+"use client";
+import { TeamsProps } from "@/lib/types";
+interface ExecutiveSectionProps {
+  data: TeamsProps;
+}
 
-export const getSocialIcon = (socialName: string) => {
-  const iconSVGAttributes = {
-    width: 24,
-    height: 24,
-  };
-  switch (socialName) {
-    case "LinkedIn":
-      return <LinkedInIcon {...iconSVGAttributes} />;
-    case "Github":
-      return <GithubIcon {...iconSVGAttributes} />;
-    case "X":
-      return <XIcon {...iconSVGAttributes} />;
-    case "Instagram":
-      return <InstagramIcon {...iconSVGAttributes} />;
-  }
-};
-
-export const TeamSection = () => {
+const ExecutiveTeamSection = ({ data }: ExecutiveSectionProps) => {
+  console.log(data);
   return (
     <section id="team" className="container lg:w-[75%] py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Our Core Team
+          Our Executives
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
-          The folks with amazing talent
+          Talents behind the scenes.
         </h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {councilCoreData?.map(
+        {/* Code here  
+        {mentorData?.map(
           (
             { imageUrl, firstName, lastName, positions, socialNetworks },
             index
@@ -94,8 +70,10 @@ export const TeamSection = () => {
               </CardFooter>
             </Card>
           )
-        )}
+        )} */}
       </div>
     </section>
   );
 };
+
+export default ExecutiveTeamSection;

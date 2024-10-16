@@ -1,7 +1,17 @@
-const TeamPage = () => {
-  //const data = getTeamDataByDivision();
+import { TeamSection } from "@/components/layout/sections/CoreCouncil";
+import ExecutiveTeamSection from "@/components/layout/sections/Executive";
+import { Mentors } from "@/components/layout/sections/Mentors";
+import { getTeamDataByDivision } from "@/lib/utils";
 
-  return <section className="container">hello</section>;
+const TeamPage = () => {
+  const teamData = getTeamDataByDivision();
+  return (
+    <>
+      <TeamSection />
+      <Mentors />
+      <ExecutiveTeamSection data={teamData} />
+    </>
+  );
 };
 
 export default TeamPage;
