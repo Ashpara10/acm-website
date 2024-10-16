@@ -1,127 +1,15 @@
-import GithubIcon from "@/components/icons/github-icon";
-import InstagramIcon from "@/components/icons/instagram-icon";
-import LinkedInIcon from "@/components/icons/linkedin-icon";
-import XIcon from "@/components/icons/x-icon";
 import {
   Card,
   CardContent,
+  CardFooter,
   CardHeader,
   CardTitle,
-  CardFooter,
 } from "@/components/ui/card";
+import { mentorData } from "@/data/team/Mentor.data";
 import Image from "next/image";
 import Link from "next/link";
-interface TeamProps {
-  imageUrl: string;
-  firstName: string;
-  lastName: string;
-  positions: string[];
-  socialNetworks: SocialNetworkProps[];
-}
-interface SocialNetworkProps {
-  name: string;
-  url: string;
-}
+import { getSocialIcon } from "./Team";
 export const Mentors = () => {
-  const teamList: TeamProps[] = [
-    {
-      imageUrl: "/mentors/mayank.jpeg",
-      firstName: "Mayank",
-      lastName: "V.",
-      positions: ["Mentor"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/mayank-v-946404131/",
-        },
-      ],
-    },
-    {
-      imageUrl: "/mentors/archi.jpeg",
-      firstName: "Archi",
-      lastName: "Jain",
-      positions: ["Overall Mentor"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/archi-jain-52949a24a/",
-        },
-      ],
-    },
-    {
-      imageUrl: "/mentors/abbas.jpeg",
-      firstName: "Abbas",
-      lastName: "Bhanpurawala",
-      positions: ["Technical Mentor"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/abbas-bhanpura-wala/",
-        },
-      ],
-    },
-    {
-      imageUrl: "/mentors/murtaza.jpg",
-      firstName: "Murtaza",
-      lastName: "Dawoodjiwala",
-      positions: ["Graphics and Video Editing Mentor"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/murtaza-dawoodji-b47261237/",
-        },
-      ],
-    },
-    {
-      imageUrl: "/mentors/ram.jpg",
-      firstName: "Ramkrishna ",
-      lastName: "Swarnkar",
-      positions: ["Technical and Video Editing Mentor"],
-      socialNetworks: [
-        {
-            name: "LinkedIn",
-            url: "https://www.linkedin.com/in/ramcodes",
-          },
-          {
-            name: "Github",
-            url: "https://github.com/ramxcodes",
-          },
-          {
-            name: "Instagram",
-            url: "https://www.instagram.com/__ramfr",
-          },
-      ],
-    },
-    {
-      imageUrl: "/mentors/lakshay.jpeg",
-      firstName: "Lakshya ",
-      lastName: "Mishra",
-      positions: ["Operations Mentor"],
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/lakshya-mishra-65275924b/",
-        },
-      ],
-    },
-  ];
-  const socialIcon = (socialName: string) => {
-    const iconSVGAttributes = {
-      width: 24,
-      height: 24,
-    };
-    switch (socialName) {
-      case "LinkedIn":
-        return <LinkedInIcon {...iconSVGAttributes} />;
-      case "Github":
-        return <GithubIcon {...iconSVGAttributes} />;
-      case "X":
-        return <XIcon {...iconSVGAttributes} />;
-      case "Instagram":
-        return <InstagramIcon {...iconSVGAttributes} />;
-    }
-  };
-
   return (
     <section id="team" className="container lg:w-[75%] py-24 sm:py-32">
       <div className="text-center mb-8">
@@ -130,12 +18,12 @@ export const Mentors = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
-            Nurturing talents through expertise mentorship.
+          Nurturing talents through expertise mentorship.
         </h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {teamList.map(
+        {mentorData?.map(
           (
             { imageUrl, firstName, lastName, positions, socialNetworks },
             index
@@ -179,7 +67,7 @@ export const Mentors = () => {
                     target="_blank"
                     className="hover:opacity-80 transition-all"
                   >
-                    {socialIcon(name)}
+                    {getSocialIcon(name)}
                   </Link>
                 ))}
               </CardFooter>

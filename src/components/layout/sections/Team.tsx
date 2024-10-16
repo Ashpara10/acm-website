@@ -9,197 +9,28 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
+import { councilCoreData } from "@/data/team/CouncilCore.data";
 import Image from "next/image";
 import Link from "next/link";
-interface TeamProps {
-  imageUrl: string;
-  firstName: string;
-  lastName: string;
-  positions: string[];
-  socialNetworks: SocialNetworkProps[];
-}
-interface SocialNetworkProps {
-  name: string;
-  url: string;
-}
 
-const teamList: TeamProps[] = [
-  {
-    imageUrl: "/team/priyanka.jpg",
-    firstName: "Priyanka",
-    lastName: "Toke",
-    positions: ["President"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/priyanka-toke-762838215/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/damita.jpg",
-    firstName: "Damita",
-    lastName: "Pathak",
-    positions: ["Vice President"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/damita-pathak-4956262a2/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/damitapathak/profilecard/?igsh=MWZ0NDUxYzUyNHhrOQ==",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/tanya.jpg",
-    firstName: "Tanya ",
-    lastName: "Somwanshi",
-    positions: ["Treasurer"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/tanya-somwanshi-277220248/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/vedant2.jpg",
-    firstName: "Vedant",
-    lastName: "Soni",
-    positions: ["Secretary"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/vedant-soni-504568249/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/ashwin.jpg",
-    firstName: "Ashwin ",
-    lastName: "Parande",
-    positions: ["Technical Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/ashwin-parande-657653294/",
-      },
-      {
-        name: "Github",
-        url: "https://github.com/Ashpara10/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/ashhhwwinnn/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/anugrah2.jpg",
-    firstName: "Anugrah",
-    lastName: "Sharma",
-    positions: ["Operations Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/anu-g-rah/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/vinayak.jpg",
-    firstName: "Vinayak",
-    lastName: "Oberoi",
-    positions: ["PR Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/vinayak-oberoi-a26ba22b0/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/riddhima.jpg",
-    firstName: "Riddhima ",
-    lastName: "Kaushal",
-    positions: ["Content Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/riddhima-kaushal-17092005rk/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/hemant.jpg",
-    firstName: "Hemant",
-    lastName: "Sharma",
-    positions: ["Graphics Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/hemant-sharma-3135b4290/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/aadeesh.jpg",
-    firstName: "Aadeesh",
-    lastName: " Jain",
-    positions: ["Video Editing Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/aadeesh-jain-486a882a3/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/kasak.jpg",
-    firstName: "Kasak",
-    lastName: "Tolani",
-    positions: ["PR Co-Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/kasak-tolani-51b5212aa/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/sakshi.jpg",
-    firstName: "Sakshi",
-    lastName: "Patil",
-    positions: ["Operations Co-Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/sakshi-patil-617803220/",
-      },
-    ],
-  },
-];
+export const getSocialIcon = (socialName: string) => {
+  const iconSVGAttributes = {
+    width: 24,
+    height: 24,
+  };
+  switch (socialName) {
+    case "LinkedIn":
+      return <LinkedInIcon {...iconSVGAttributes} />;
+    case "Github":
+      return <GithubIcon {...iconSVGAttributes} />;
+    case "X":
+      return <XIcon {...iconSVGAttributes} />;
+    case "Instagram":
+      return <InstagramIcon {...iconSVGAttributes} />;
+  }
+};
 
 export const TeamSection = () => {
-  const socialIcon = (socialName: string) => {
-    const iconSVGAttributes = {
-      width: 24,
-      height: 24,
-    };
-    switch (socialName) {
-      case "LinkedIn":
-        return <LinkedInIcon {...iconSVGAttributes} />;
-      case "Github":
-        return <GithubIcon {...iconSVGAttributes} />;
-      case "X":
-        return <XIcon {...iconSVGAttributes} />;
-      case "Instagram":
-        return <InstagramIcon {...iconSVGAttributes} />;
-    }
-  };
-
   return (
     <section id="team" className="container lg:w-[75%] py-24 sm:py-32">
       <div className="text-center mb-8">
@@ -213,7 +44,7 @@ export const TeamSection = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {teamList.map(
+        {councilCoreData?.map(
           (
             { imageUrl, firstName, lastName, positions, socialNetworks },
             index
@@ -257,7 +88,7 @@ export const TeamSection = () => {
                     target="_blank"
                     className="hover:opacity-80 transition-all"
                   >
-                    {socialIcon(name)}
+                    {getSocialIcon(name)}
                   </Link>
                 ))}
               </CardFooter>
