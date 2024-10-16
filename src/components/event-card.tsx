@@ -34,7 +34,7 @@ const EventCard: FC<TEvent> = ({ title, cover, description, id, status }) => {
   };
 
   return (
-    <Card className="relative bg-white dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg">
+    <Card className="relative bg-white dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg group">
       {status && (
         <Badge className={getStatusClasses(status)}>
           <p className="tracking-wider">{status}</p>
@@ -46,7 +46,7 @@ const EventCard: FC<TEvent> = ({ title, cover, description, id, status }) => {
           <Image
             src={cover}
             alt="Event cover image"
-            className="aspect-square w-full grayscale hover:grayscale-0 ease-in-out duration-300"
+            className="aspect-square w-full grayscale group-hover:grayscale-0 ease-in-out duration-300"
             width={300}
             height={300}
             quality={100}
