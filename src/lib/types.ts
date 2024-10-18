@@ -17,9 +17,8 @@ export interface TeamMemberProps {
   name: string;
   role: string;
   image: string;
-  bio: string;
-  linkedin: string;
   github: string;
+  linkedin: string;
   instagram: string;
 }
 

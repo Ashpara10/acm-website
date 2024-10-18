@@ -10,9 +10,18 @@ import { mentorData } from "@/data/team/Mentor.data";
 import Image from "next/image";
 import Link from "next/link";
 import { getSocialIcon } from "./CoreCouncil";
+import { usePathname } from "next/navigation";
 export const Mentors = () => {
+  const pathname = usePathname();
   return (
-    <section id="team" className="container lg:w-[75%] py-24 sm:py-32">
+    <section
+      id="team"
+      className={
+        pathname === "/team"
+          ? "container py-16"
+          : "container lg:w-[75%] py-24 sm:py-32"
+      }
+    >
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
           Our Mentors

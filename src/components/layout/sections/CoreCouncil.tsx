@@ -34,14 +34,13 @@ export const getSocialIcon = (socialName: string) => {
 
 export const TeamSection = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <section
       id="team"
       className={
         pathname === "/team"
-          ? "container lg:w-[75%] py-16"
+          ? "container py-16"
           : "container lg:w-[75%] py-24 sm:py-32"
       }
     >
