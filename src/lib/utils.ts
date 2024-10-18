@@ -1,9 +1,9 @@
 import { type ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
-import { TEvent } from "./types";
+import path from "path";
+import { twMerge } from "tailwind-merge";
+import { TeamsProps, TEvent } from "./types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -59,3 +59,18 @@ export function getSortedPostsData() {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 }
+
+// Function to read and parse the team markdown file
+export const getTeamDataByDivision = (): TeamsProps => {
+  const executiveTeamDataDir = path.join(
+    process.cwd(),
+    "src/data/team/ExecutiveTeam.data.md"
+  );
+  const fileContent = fs.readFileSync(executiveTeamDataDir, "utf8");
+
+  // Use gray-matter to parse the front matter
+  const { data } = matter(fileContent) as unknown as { data: TeamsProps };
+
+  // Return the parsed team data by division
+  return data;
+};

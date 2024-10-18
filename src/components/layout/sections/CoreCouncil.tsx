@@ -1,18 +1,40 @@
 "use client";
+import GithubIcon from "@/components/icons/github-icon";
+import InstagramIcon from "@/components/icons/instagram-icon";
+import LinkedInIcon from "@/components/icons/linkedin-icon";
+import XIcon from "@/components/icons/x-icon";
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
+  CardFooter,
 } from "@/components/ui/card";
-import { mentorData } from "@/data/team/Mentor.data";
+import { councilCoreData } from "@/data/team/CouncilCore.data";
 import Image from "next/image";
 import Link from "next/link";
-import { getSocialIcon } from "./CoreCouncil";
 import { usePathname } from "next/navigation";
-export const Mentors = () => {
+
+export const getSocialIcon = (socialName: string) => {
+  const iconSVGAttributes = {
+    width: 24,
+    height: 24,
+  };
+  switch (socialName) {
+    case "LinkedIn":
+      return <LinkedInIcon {...iconSVGAttributes} />;
+    case "Github":
+      return <GithubIcon {...iconSVGAttributes} />;
+    case "X":
+      return <XIcon {...iconSVGAttributes} />;
+    case "Instagram":
+      return <InstagramIcon {...iconSVGAttributes} />;
+  }
+};
+
+export const TeamSection = () => {
   const pathname = usePathname();
+
   return (
     <section
       id="team"
@@ -24,16 +46,16 @@ export const Mentors = () => {
     >
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Our Mentors
+          Our Core Team
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
-          Nurturing talents through expertise mentorship.
+          The folks with amazing talent
         </h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {mentorData?.map(
+        {councilCoreData?.map(
           (
             { imageUrl, firstName, lastName, positions, socialNetworks },
             index
