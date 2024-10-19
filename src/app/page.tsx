@@ -13,11 +13,7 @@ import { getSortedPostsData } from "@/lib/utils";
 export const metadata = {
   title: "MU-ACM",
   description: "MU-ACM - Medicaps University ACM Student Chapter",
-  icons: {
-    icon: "/logo.png",
-  },
 };
-
 export default function Home() {
   const data = getSortedPostsData();
   return (
