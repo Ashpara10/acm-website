@@ -74,11 +74,11 @@ const routeList: RouteProps[] = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  //const path = usePathname();
+  
   return (
     <header className="container sticky top-5 z-40">
-      <nav className="shadow-inner bg-opacity-15  border border-secondary rounded-2xl flex justify-between items-center py-2 px-2.5 md:px-4 bg-card/50 backdrop-blur-lg">
-        <Link href="/" className="font-bold text-lg flex items-center">
+      <nav className="shadow-inner bg-opacity-15 border border-secondary rounded-2xl flex justify-between items-center py-2 px-2.5 md:px-4 bg-card/50 backdrop-blur-lg">
+        <Link href="/" className="font-bold text-lg flex transform transition-transform duration-300 hover:-translate-y-2">
           <Image
             src="/logo.png"
             alt="logo"
@@ -87,7 +87,8 @@ export const Navbar = () => {
             className="w-[50px] md:w-[60px]"
           />
         </Link>
-        {/* <!-- Mobile --> */}
+
+        {/* Mobile Menu */}
         <div className="flex items-center lg:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -132,52 +133,23 @@ export const Navbar = () => {
 
               <SheetFooter className="flex-col sm:flex-col justify-start items-start">
                 <Separator className="mb-2" />
-
                 <ToggleTheme />
               </SheetFooter>
             </SheetContent>
           </Sheet>
         </div>
 
-        {/* <!-- Desktop --> */}
-        <NavigationMenu className="hidden lg:block mx-auto">
+        {/* Desktop Menu */}
+        <NavigationMenu className="hidden lg:block mx-auto transition duration-300">
           <NavigationMenuList>
-            {/* <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
-              Features
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
-                  width={600}
-                  height={600}
-                />
-                <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem> */}
-
-            <NavigationMenuItem>
+            <NavigationMenuItem >
               {routeList.map(({ href, label }) => (
-                <NavigationMenuLink key={href} asChild>
-                  <Link href={href} className="text-base px-2">
+                <NavigationMenuLink className="space-x-2" key={href} asChild>
+                  <Link 
+                    href={href} 
+                    className="text-base px-2 transition-all duration-300 hover:bg-primary/30 py-1.5 rounded-md"
+                  >
+                    {/* shadow-lg hover:shadow-blue-500/50 */}
                     {label}
                   </Link>
                 </NavigationMenuLink>
@@ -188,7 +160,6 @@ export const Navbar = () => {
 
         <div className="hidden lg:flex">
           <ToggleTheme />
-
           <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
             <Link
               aria-label="View on GitHub"
