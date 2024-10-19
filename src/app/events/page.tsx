@@ -1,5 +1,4 @@
 import Events from "@/components/layout/sections/Events";
-import { FooterSection } from "@/components/layout/sections/Footer";
 import { getSortedPostsData } from "@/lib/utils";
 import React, { FC } from "react";
 
@@ -10,7 +9,6 @@ const Page: FC<PageProps> = ({}) => {
   return (
     <>
       <Events data={data} />
-      <FooterSection />
     </>
   );
 };

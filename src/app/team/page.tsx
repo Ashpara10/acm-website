@@ -1,6 +1,5 @@
 import { TeamSection } from "@/components/layout/sections/CoreCouncil";
 import ExecutiveTeamSection from "@/components/layout/sections/ExecutiveTeamSection";
-import { FooterSection } from "@/components/layout/sections/Footer";
 import { Mentors } from "@/components/layout/sections/Mentors";
 import { getTeamDataByDivision } from "@/lib/utils";
 
@@ -12,7 +11,6 @@ const TeamPage = () => {
       <TeamSection />
       <Mentors />
       <ExecutiveTeamSection data={teamData} />
-      <FooterSection />
     </>
   );
 };
