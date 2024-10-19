@@ -7,10 +7,36 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+const SocialLink = ({
+  href,
+  IconComponent,
+}: {
+  href: string;
+  IconComponent: React.ComponentType<{ width: number }>;
+}) => {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      className="opacity-75 hover:opacity-100 transition-all"
+    >
+      <IconComponent width={24} />
+    </Link>
+  );
+};
+
 const ExecutiveMemberCard = ({ data }: { data: TeamMemberProps }) => {
   if (data !== undefined) {
     const { name, role, image, github, linkedin, instagram } = data;
     const splitName = name.trim().split(" ");
+    const socialLinksObj = [
+      { href: linkedin, IconComponent: LinkedInIcon },
+      { href: github, IconComponent: GithubIcon },
+      {
+        href: "https://www.instagram.com/" + instagram,
+        IconComponent: InstagramIcon,
+      },
+    ];
     return (
       <Card className="w-full bg-muted/60 dark:bg-card px-4 py-3 flex gap-3 overflow-hidden group/hoverimg">
         <div className="overflow-hidden rounded-md max-w-[96.66px]">
@@ -19,7 +45,7 @@ const ExecutiveMemberCard = ({ data }: { data: TeamMemberProps }) => {
             alt="placeholder"
             width={75}
             height={75}
-            className="w-full saturate-0 group-hover/hoverimg:saturate-100  group-hover/hoverimg:scale-125 transition-transform"
+            className="w-full aspect-square saturate-0 group-hover/hoverimg:saturate-100  group-hover/hoverimg:scale-125 transition-transform"
           />
         </div>
         <div className="w-[calc(100%-96.66px)] flex flex-col justify-between py-1">
@@ -39,27 +65,16 @@ const ExecutiveMemberCard = ({ data }: { data: TeamMemberProps }) => {
             </p>
           </div>
           <div className="mt-4 flex gap-2">
-            <Link
-              href={linkedin}
-              target="_blank"
-              className="opacity-75 hover:opacity-100 transition-all"
-            >
-              <LinkedInIcon width={24} />
-            </Link>
-            <Link
-              href={github}
-              target="_blank"
-              className="opacity-75 hover:opacity-100 transition-all"
-            >
-              <GithubIcon width={24} />
-            </Link>
-            <Link
-              href={instagram}
-              target="_blank"
-              className="opacity-75 hover:opacity-100 transition-all"
-            >
-              <InstagramIcon width={24} />
-            </Link>
+            {socialLinksObj.map(
+              (link) =>
+                link.href && (
+                  <SocialLink
+                    key={link.href}
+                    href={link.href}
+                    IconComponent={link.IconComponent}
+                  />
+                )
+            )}
           </div>
         </div>
       </Card>
