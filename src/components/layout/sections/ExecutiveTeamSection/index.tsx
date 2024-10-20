@@ -2,24 +2,42 @@
 import { Badge } from "@/components/ui/badge";
 import { TeamMemberProps, TeamsProps } from "@/lib/types";
 import ExecutiveMemberCard from "./ExecutiveMemberCard";
+import { cn } from "@/lib/utils";
 interface ExecutiveSectionProps {
   data: TeamsProps;
 }
 
-const getTeamName = (teamName: keyof TeamsProps) => {
+const getTeamDetails = (teamName: keyof TeamsProps) => {
   switch (teamName) {
     case "technical":
-      return "Technical";
+      return {
+        name: "Technical",
+      };
     case "operations":
-      return "Operations";
+      return {
+        name: "Operations",
+        className: "bg-red-500",
+      };
     case "pr":
-      return "Public Relations";
+      return {
+        name: "Public Relations",
+        className: "bg-green-500",
+      };
     case "graphics":
-      return "Graphics";
+      return {
+        name: "Graphics",
+        className: "bg-purple-500",
+      };
     case "videoEditing":
-      return "Video Editing";
+      return {
+        name: "Video Editing",
+        className: "bg-yellow-500",
+      };
     case "content":
-      return "Content";
+      return {
+        name: "Content",
+        className: "bg-pink-500",
+      };
     default:
       return undefined;
   }
@@ -38,21 +56,22 @@ const ExecutiveTeamSection = ({ data }: ExecutiveSectionProps) => {
         </h2>
       </div>
       {(Object.entries(data) as [keyof TeamsProps, TeamMemberProps[]][]).map(
-        ([teamName, teamMembers], index) => {
-          const teamDisplayName = getTeamName(teamName);
+        ([teamName, teamMembers]) => {
+          const teamDisplayDetails = getTeamDetails(teamName);
           return (
             <div
               key={teamName}
               className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 border rounded-xl py-5 px-3 sm:p-8 mb-10"
             >
-              {teamDisplayName && (
+              {teamDisplayDetails && (
                 <Badge
-                  className={`absolute max-sm:left-1/2 transform  -translate-x-1/2 sm:transform-none sm:-translate-x-0 -top-[12px] sm:-top-[13px] px-3 md:px-4 py-1 pointer-events-none ${
-                    index % 2 == 0 ? "sm:left-20" : "sm:right-20"
-                  }`}
+                  className={cn(
+                    "absolute max-sm:left-1/2 transform -translate-x-1/2 sm:transform-none sm:-translate-x-0 -top-[12px] sm:-top-[13px] sm:left-20 px-3 md:px-4 py-1 pointer-events-none",
+                    teamDisplayDetails.className && teamDisplayDetails.className
+                  )}
                 >
                   <p className="tracking-wider text-xs sm:text-[14px] leading-none flex gap-1">
-                    {getTeamName(teamName)}{" "}
+                    {teamDisplayDetails.name}
                     <span className="hidden sm:block">Team</span>
                   </p>
                 </Badge>

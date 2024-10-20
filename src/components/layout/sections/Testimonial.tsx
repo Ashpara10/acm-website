@@ -25,7 +25,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "/team/damita.jpg",
+    image: "/team/Damita_Pathak.webp",
     name: "Damita Pathak",
     userName: "Vice President",
     comment:
@@ -42,7 +42,7 @@ const reviewList: ReviewProps[] = [
     rating: 4.9,
   },
   {
-    image: "/team/vinayak.jpg",
+    image: "/team/Vinayak_oberoi.webp",
     name: "Vinayak Oberoi",
     userName: "PR Head",
     comment:
@@ -66,7 +66,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "/team/ashwin.jpg",
+    image: "/team/ashwin_parande.webp",
     name: "Ashwin Parande",
     userName: "Technical Head",
     comment:

@@ -14,7 +14,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/damita.jpg",
+    imageUrl: "/team/Damita_Pathak.webp",
     firstName: "Damita",
     lastName: "Pathak",
     positions: ["Vice President"],
@@ -54,7 +54,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/ashwin.jpg",
+    imageUrl: "/team/ashwin_parande.webp",
     firstName: "Ashwin ",
     lastName: "Parande",
     positions: ["Technical Head"],
@@ -86,7 +86,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/vinayak.jpg",
+    imageUrl: "/team/Vinayak_oberoi.webp",
     firstName: "Vinayak",
     lastName: "Oberoi",
     positions: ["PR Head"],
@@ -110,7 +110,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/hemant.jpg",
+    imageUrl: "/team/Hemant_sharma.webp",
     firstName: "Hemant",
     lastName: "Sharma",
     positions: ["Graphics Head"],
@@ -134,7 +134,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/kasak.jpg",
+    imageUrl: "/team/kasak_tolani.webp",
     firstName: "Kasak",
     lastName: "Tolani",
     positions: ["PR Co-Head"],
@@ -146,7 +146,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/sakshi.jpg",
+    imageUrl: "/team/Sakshi_Patil.webp",
     firstName: "Sakshi",
     lastName: "Patil",
     positions: ["Operations Co-Head"],

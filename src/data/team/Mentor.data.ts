@@ -38,7 +38,7 @@ export const mentorData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/mentors/murtaza.jpg",
+    imageUrl: "/mentors/Murtaza_Dawoodjeewala.webp",
     firstName: "Murtaza",
     lastName: "Dawoodjiwala",
     positions: ["Graphics and Video Editing Mentor"],
