@@ -12,6 +12,7 @@ const Events: FC<EventsProps> = ({ data }) => {
   const pathname = usePathname();
   const latestEventsData = data?.slice(0, 3);
   return (
+    <>
     <section className="container w-full mt-[80px] pb-24">
       <div className="text-center mb-8">
         {pathname && pathname === "/" ? (
@@ -31,6 +32,12 @@ const Events: FC<EventsProps> = ({ data }) => {
           : data?.map((event) => <EventCard key={event.id} {...event} />)}
       </div>
     </section>
+    <div className="text-center mt-4 hover:text-primary group">
+      <a href="/events" className="text-lg text-primary block text-center -mt-20 tracking-wider">
+        All Events <span className="inline-block group-hover:translate-x-1 transition-transform duration-200"> &rarr;</span>
+      </a>
+    </div>
+    </>
   );
 };
 
