@@ -67,7 +67,7 @@ const TopContributors = () => {
         </h2>
       </div>
 
-      <motion.div className="w-full grid grid-cols-2 max-w-2xl gap-3">
+      <motion.div className="w-full md:px-0 px-3 grid grid-cols-1 md:grid-cols-2 max-w-2xl gap-3">
         {isLoading
           ? [...Array(8)].map((_, i) => {
               return (
@@ -77,7 +77,7 @@ const TopContributors = () => {
                 />
               );
             })
-          : topContributors!?.map((c, i) => {
+          : topContributors!?.slice(0, 8).map((c, i) => {
               return <TopContributorCard key={c?.id} contributor={c} />;
             })}
       </motion.div>
