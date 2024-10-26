@@ -32,11 +32,20 @@ const Events: FC<EventsProps> = ({ data }) => {
           : data?.map((event) => <EventCard key={event.id} {...event} />)}
       </div>
     </section>
-    <div className="text-center mt-4 hover:text-primary group">
-      <a href="/events" className="text-lg text-primary block text-center -mt-20 tracking-wider">
-        All Events <span className="inline-block group-hover:translate-x-1 transition-transform duration-200"> &rarr;</span>
-      </a>
-    </div>
+    {pathname === "/" && (
+        <div className="text-center mt-4 hover:text-primary group">
+          <a
+            href="/events"
+            className="text-lg text-primary block text-center -mt-20 tracking-wider"
+          >
+            All Events{" "}
+            <span className="inline-block group-hover:translate-x-1 transition-transform duration-200">
+              {" "}
+              &rarr;
+            </span>
+          </a>
+        </div>
+      )}
     </>
   );
 };
