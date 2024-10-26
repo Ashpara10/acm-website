@@ -1,7 +1,6 @@
 "use client";
 import TopContributorCard from "@/components/top-contributor-card";
 import { delay, GITHUB_ACCESS_TOKEN } from "@/lib/utils";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export type TContributor = {
@@ -67,7 +66,7 @@ const TopContributors = () => {
         </h2>
       </div>
 
-      <motion.div className="w-full md:px-0 px-3 grid grid-cols-1 md:grid-cols-2 max-w-2xl gap-3">
+      <div className="w-full md:px-0 px-3 grid grid-cols-1 md:grid-cols-2 max-w-2xl gap-3">
         {isLoading
           ? [...Array(8)].map((_, i) => {
               return (
@@ -77,10 +76,10 @@ const TopContributors = () => {
                 />
               );
             })
-          : topContributors!?.slice(0, 8).map((c) => {
+          : topContributors?.slice(0, 8).map((c) => {
               return <TopContributorCard key={c?.id} contributor={c} />;
             })}
-      </motion.div>
+      </div>
     </section>
   );
 };
