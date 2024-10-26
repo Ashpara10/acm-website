@@ -77,7 +77,7 @@ const TopContributors = () => {
                 />
               );
             })
-          : topContributors!?.slice(0, 8).map((c, _) => {
+          : topContributors!?.slice(0, 8).map((c) => {
               return <TopContributorCard key={c?.id} contributor={c} />;
             })}
       </motion.div>
