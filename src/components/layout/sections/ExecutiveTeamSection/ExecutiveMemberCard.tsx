@@ -38,6 +38,7 @@ const ExecutiveMemberCard = ({ data }: { data: TeamMemberProps }) => {
       },
     ];
     return (
+
       <Card className="w-full bg-muted/60 dark:bg-card px-4 py-3 flex gap-3 transition-transform duration-2000 overflow-hidden group">
   <div className="overflow-hidden rounded-md max-w-[96.66px]">
     <Image
@@ -78,7 +79,6 @@ const ExecutiveMemberCard = ({ data }: { data: TeamMemberProps }) => {
     </div>
   </div>
   </Card>
-
     );
   } else {
     return <></>;
