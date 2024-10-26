@@ -9,6 +9,9 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export const GITHUB_ACCESS_TOKEN =
+  process?.env?.NEXT_PUBLIC_GITHUB_ACCESS_TOKEN;
+
 export function getDayOfWeek(date: Date) {
   const daysOfWeek = [
     "Sunday",
@@ -74,3 +77,7 @@ export const getTeamDataByDivision = (): TeamsProps => {
   // Return the parsed team data by division
   return data;
 };
+
+export function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
