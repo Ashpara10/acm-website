@@ -1,8 +1,7 @@
-/** 
- * @type {import('next').NextConfig} 
+/**
+ * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  
   webpack: (config) => {
     config.resolve.fallback = { fs: false, path: false };
 
@@ -17,6 +16,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
       },
     ],
   },
