@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Container, Typography, Box, List, ListItem, ListItemText, IconButton, Fab } from '@mui/material';
+import { Typography, Box, List, ListItem, ListItemText, Fab } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 
