@@ -10,6 +10,7 @@ import { TestimonialSection } from "@/components/layout/sections/Testimonial";
 import { TextHoverEffectSection } from "@/components/layout/sections/TextHoverEffectSection";
 import { getSortedPostsData } from "@/lib/utils";
 import TopContributors from "@/components/layout/sections/TopContributors";
+import TopNews from "@/components/layout/TopNews";
 
 export const metadata = {
   title: "MU-ACM",
@@ -30,6 +31,7 @@ export default function Home() {
       <TopContributors />
       <FAQSection />
       <TextHoverEffectSection />
+      <TopNews />
     </>
   );
 }
