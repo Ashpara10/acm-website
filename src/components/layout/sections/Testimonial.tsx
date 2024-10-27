@@ -18,7 +18,7 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "/team/priyanka.jpg",
+    image: "/team/priyanka.webp",
     name: "Priyanka Toke",
     userName: "President",
     comment: `Being in ACM has been the most delightful experience of my entire college journey. In August 2023, I unexpectedly became the content head of MU-ACM. The club, the people, and the work quickly became an integral part of my life. I'm so grateful for the opportunity. I gave my all to the organization and was honored to become president. My tenure in both positions has been a total of two years, but the infinite memories will last a lifetime. Here at MU-ACM, we're not just colleagues; we're a family. We're proud to showcase that feeling of camaraderie in our chapter's culture.`,
@@ -34,7 +34,7 @@ const reviewList: ReviewProps[] = [
   },
 
   {
-    image: "/team/anugrah2.jpg",
+    image: "/team/anugrah2.webp",
     name: "Anugrah Sharma",
     userName: "Operations Head",
     comment:
@@ -50,7 +50,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "/team/vedant2.jpg",
+    image: "/team/vedant2.webp",
     name: "Vedant Soni",
     userName: "Secretary",
     comment:
@@ -58,7 +58,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "/team/tanya.jpg",
+    image: "/team/tanya.webp",
     name: "Tanya Somwanshi",
     userName: "Treasurer",
     comment:
@@ -74,7 +74,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "/team/riddhima.jpg",
+    image: "/team/riddhima.webp",
     name: "Riddhima Kaushal",
     userName: "Content Head",
     comment:
