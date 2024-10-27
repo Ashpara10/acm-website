@@ -31,26 +31,6 @@ export const HeroSection = () => {
             {`We're more than just a club, we're a community of tech
             enthusiasts. Get access to our exclusive Events and Workshops.`}
           </p>
-
-          {/* <div className="space-y-4 md:space-y-0 md:space-x-4">
-            <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
-              Get Started
-              <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
-            </Button>
-
-            <Button
-              asChild
-              variant="secondary"
-              className="w-5/6 md:w-1/4 font-bold"
-            >
-              <Link
-                href="https://github.com/nobruf/shadcn-landing-page.git"
-                target="_blank"
-              >
-                Github respository
-              </Link>
-            </Button>
-          </div> */}
         </div>
 
         <div className="relative group mt-14">
@@ -59,7 +39,7 @@ export const HeroSection = () => {
             width={1200}
             height={1200}
             className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
-            src={"/banner.JPG"}
+            src={"/banner.webp"}
             alt="dashboard"
           />
 
