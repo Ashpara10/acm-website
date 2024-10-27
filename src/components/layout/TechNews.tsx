@@ -9,7 +9,7 @@ interface NewsItem {
 const TechNews = () => {
   const [news, setNews] = useState<NewsItem[]>([]);
   const [showNews, setShowNews] = useState(false);
-  const [currentHeadline, setCurrentHeadline] = useState(0);
+  const [currentHeadline, setCurrentHeadline] = useState<number>(0);
   const [showMessageBox, setShowMessageBox] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
