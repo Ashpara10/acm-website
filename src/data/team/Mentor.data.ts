@@ -2,7 +2,7 @@ import { AdvisoryTeamProps } from "@/lib/types";
 
 export const mentorData: AdvisoryTeamProps[] = [
   {
-    imageUrl: "/mentors/mayank.jpeg",
+    imageUrl: "/mentors/mayank.webp",
     firstName: "Mayank",
     lastName: "V.",
     positions: ["Mentor"],
@@ -14,7 +14,7 @@ export const mentorData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/mentors/archi.jpeg",
+    imageUrl: "/mentors/archi.webp",
     firstName: "Archi",
     lastName: "Jain",
     positions: ["Overall Mentor"],
@@ -26,7 +26,7 @@ export const mentorData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/mentors/abbas.jpeg",
+    imageUrl: "/mentors/abbas.webp",
     firstName: "Abbas",
     lastName: "Bhanpurawala",
     positions: ["Technical Mentor"],
@@ -50,7 +50,7 @@ export const mentorData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/mentors/ram.jpg",
+    imageUrl: "/mentors/ram.webp",
     firstName: "Ramkrishna ",
     lastName: "Swarnkar",
     positions: ["Technical and Video Editing Mentor"],
@@ -70,7 +70,7 @@ export const mentorData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/mentors/lakshay.jpeg",
+    imageUrl: "/mentors/lakshay.webp",
     firstName: "Lakshya ",
     lastName: "Mishra",
     positions: ["Operations Mentor"],

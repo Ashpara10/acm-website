@@ -2,7 +2,7 @@
 title: "Fastn Workshop"
 status: "COMPLETED"
 date: "2023-10-06"
-cover: "/events/fastn.jpg"
+cover: "/events/fastn.webp"
 time: "02:00 PM - 05:00 PM"
 mode: "offline"
 location: "Medicaps University, Minor Auditorium"
@@ -10,12 +10,12 @@ attending: 100
 description: "ACM-W and MU-ACM collaboratively organized a hands-on workshop on Fastn. The speakers for the session were Ajinkya Bhoite and Jasneet Singh Saini, respective Vice President and Treasurer of ACM-W. Students actively engaged in the Hands-on session, utilizing their respective Github repositories to create impressive portfolios using the Fastn framework. Towards the end of the workshop, an engaging quiz was conducted to test the attendees' knowledge and understanding of the Fastn Framework"
 images:
   [
-    "/events/fastn/ss1.JPG",
-    "/events/fastn/ss2.JPG",
-    "/events/fastn/ss3.JPG",
-    "/events/fastn/ss4.JPG",
-    "/events/fastn/ss5.JPG",
-    "/events/fastn/ss6.JPG",
+    "/events/fastn/ss1.webp",
+    "/events/fastn/ss2.webp",
+    "/events/fastn/ss3.webp",
+    "/events/fastn/ss4.webp",
+    "/events/fastn/ss5.webp",
+    "/events/fastn/ss6.webp",
   ]
 ---
 
