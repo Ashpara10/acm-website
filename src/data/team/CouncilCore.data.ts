@@ -2,7 +2,7 @@ import { AdvisoryTeamProps } from "@/lib/types";
 
 export const councilCoreData: AdvisoryTeamProps[] = [
   {
-    imageUrl: "/team/priyanka.jpg",
+    imageUrl: "/team/priyanka.webp",
     firstName: "Priyanka",
     lastName: "Toke",
     positions: ["President"],
@@ -30,7 +30,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/tanya.jpg",
+    imageUrl: "/team/tanya.webp",
     firstName: "Tanya ",
     lastName: "Somwanshi",
     positions: ["Treasurer"],
@@ -42,7 +42,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/vedant2.jpg",
+    imageUrl: "/team/vedant2.webp",
     firstName: "Vedant",
     lastName: "Soni",
     positions: ["Secretary"],
@@ -74,7 +74,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/anugrah2.jpg",
+    imageUrl: "/team/anugrah2.webp",
     firstName: "Anugrah",
     lastName: "Sharma",
     positions: ["Operations Head"],
@@ -98,7 +98,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/riddhima.jpg",
+    imageUrl: "/team/riddhima.webp",
     firstName: "Riddhima ",
     lastName: "Kaushal",
     positions: ["Content Head"],
@@ -122,7 +122,7 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/aadeesh.jpg",
+    imageUrl: "/team/aadeesh.webp",
     firstName: "Aadeesh",
     lastName: " Jain",
     positions: ["Video Editing Head"],

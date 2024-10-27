@@ -2,7 +2,7 @@
 title: "Fundamentals of Video Editing"
 status: "COMPLETED"
 date: "2024-06-19"
-cover: "/events/editing.jpg"
+cover: "/events/editing.webp"
 time: "02:00 PM - 04:00 PM"
 mode: "online"
 location: "Zoom"
@@ -10,12 +10,12 @@ attending: 52
 description: "Digital Marketing with AI explores the intersection of AI and digital marketing through expert sessions on AI-driven strategies. The recent session offered insights into using AI for personalised campaigns, data-driven decisions, and enhanced customer engagement."
 images:
   [
-    "/events/video-editing/ss1.jpeg",
-    "/events/video-editing/ss2.jpeg",
-    "/events/video-editing/ss3.jpeg",
-    "/events/video-editing/ss4.jpeg",
-    "/events/video-editing/ss5.jpeg",
-    "/events/video-editing/ss6.jpeg",
+    "/events/video-editing/ss1.webp",
+    "/events/video-editing/ss2.webp",
+    "/events/video-editing/ss3.webp",
+    "/events/video-editing/ss4.webp",
+    "/events/video-editing/ss5.webp",
+    "/events/video-editing/ss6.webp",
   ]
 ---
 

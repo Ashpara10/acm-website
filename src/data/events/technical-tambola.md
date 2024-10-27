@@ -2,7 +2,7 @@
 title: "Technical Tambola 3.0"
 status: "COMPLETED"
 date: "2024-03-21"
-cover: "/events/tambola.jpg"
+cover: "/events/tambola.webp"
 time: "10:30 AM - 12:30 PM"
 mode: "offline"
 location: "Medicaps University, Q Block"

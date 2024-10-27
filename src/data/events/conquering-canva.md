@@ -2,7 +2,7 @@
 title: "Conquering Canva"
 status: "COMPLETED"
 date: "2024-05-22"
-cover: "/events/canva.jpg"
+cover: "/events/canva.webp"
 time: "02:00 PM - 04:00 PM"
 mode: "online"
 location: "Zoom"

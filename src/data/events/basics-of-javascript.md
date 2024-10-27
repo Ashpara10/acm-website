@@ -2,7 +2,7 @@
 title: "Basics Of Javascript"
 status: "COMPLETED"
 date: "2024-09-14"
-cover: "/events/basics-of-js.jpg"
+cover: "/events/basics-of-js.webp"
 time: "02:00 PM - 03:00 PM"
 mode: "online"
 location: "Zoom"
@@ -10,12 +10,12 @@ attending: 132
 description: "Mastering JavaScript was a free online workshop designed to introduce participants to the fundamentals and practical applications of JavaScript. Led by Mr. Swayam Prajapat, an experienced full-stack developer"
 images:
   [
-    "/events/ainnovate/ss1.jpg",
-    "/events/ainnovate/ss2.jpg",
-    "/events/ainnovate/ss3.jpg",
-    "/events/ainnovate/ss4.jpg",
-    "/events/ainnovate/ss5.jpg",
-    "/events/ainnovate/ss6.jpg",
+    "/events/ainnovate/ss1.webp",
+    "/events/ainnovate/ss2.webp",
+    "/events/ainnovate/ss3.webp",
+    "/events/ainnovate/ss4.webp",
+    "/events/ainnovate/ss5.webp",
+    "/events/ainnovate/ss6.webp",
   ]
 ---
 

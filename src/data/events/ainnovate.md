@@ -2,7 +2,7 @@
 title: "AInnovate Workshop"
 status: "COMPLETED"
 date: "2023-11-20"
-cover: "/events/ainnovate.jpg"
+cover: "/events/ainnovate.webp"
 time: "02:00 PM - 05:00 PM"
 mode: "offline"
 location: "Medicaps University, Minor Auditorium"
@@ -10,12 +10,12 @@ attending: 95
 description: "AIInnovate advances AI knowledge through expert sessions on the latest advancements, practical applications, and future trends. Our recent session provided valuable insights into AI’s transformative potential and encouraged interactive discussions among attendees."
 images:
   [
-    "/events/ainnovate/ss1.jpg",
-    "/events/ainnovate/ss2.jpg",
-    "/events/ainnovate/ss3.jpg",
-    "/events/ainnovate/ss4.jpg",
-    "/events/ainnovate/ss5.jpg",
-    "/events/ainnovate/ss6.jpg",
+    "/events/ainnovate/ss1.webp",
+    "/events/ainnovate/ss2.webp",
+    "/events/ainnovate/ss3.webp",
+    "/events/ainnovate/ss4.webp",
+    "/events/ainnovate/ss5.webp",
+    "/events/ainnovate/ss6.webp",
   ]
 ---
 
