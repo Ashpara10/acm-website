@@ -55,30 +55,13 @@ const routeList: RouteProps[] = [
   },
 ];
 
-// const featureList: FeatureProps[] = [
-//   {
-//     title: "Showcase Your Value ",
-//     description: "Highlight how your product solves user problems.",
-//   },
-//   {
-//     title: "Build Trust",
-//     description:
-//       "Leverages social proof elements to establish trust and credibility.",
-//   },
-//   {
-//     title: "Capture Leads",
-//     description:
-//       "Make your lead capture form visually appealing and strategically.",
-//   },
-// ];
-
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  
+
   return (
     <header className="container sticky top-5 z-40">
       <nav className="shadow-inner bg-opacity-15 border border-secondary rounded-2xl flex justify-between items-center py-2 px-2.5 md:px-4 bg-card/50 backdrop-blur-lg">
-        <Link href="/" className="font-bold text-lg flex transform transition-transform duration-300 hover:-translate-y-2">
+        <Link href="/">
           <Image
             src="/logo.png"
             alt="logo"
@@ -142,11 +125,11 @@ export const Navbar = () => {
         {/* Desktop Menu */}
         <NavigationMenu className="hidden lg:block mx-auto transition duration-300">
           <NavigationMenuList>
-            <NavigationMenuItem >
+            <NavigationMenuItem>
               {routeList.map(({ href, label }) => (
                 <NavigationMenuLink className="space-x-2" key={href} asChild>
-                  <Link 
-                    href={href} 
+                  <Link
+                    href={href}
                     className="text-base px-2 transition-all duration-300 hover:bg-primary/30 py-1.5 rounded-md"
                   >
                     {/* shadow-lg hover:shadow-blue-500/50 */}
