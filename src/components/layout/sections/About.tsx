@@ -18,17 +18,13 @@ export const BenefitsSection = () => {
           <p className="text-xl text-muted-foreground mb-8">
             The ACM <b>(Association for Computing Machinery)</b> is a
             75-year-old international scientific and industrial computing
-            society. Through its many Special Interest Groups, the ACM fosters
-            research and communication in a broad range of computing areas. The
-            society has around 100,000, spread over 174 countries leading to
+            society. The society has around 100,000, spread over 174 countries leading to
             interaction between diversified computing enthusiasts. The Medi-Caps
             University ACM Student Chapter is a vibrant community of like minded
             individuals with a shared love for technology. Dedicated to
             fostering the growth in the world of computing and machinery, we
             focus on organising a variety of events which cater to the holistic
-            technical needs of the job market. As a subsidiary of the
-            international organisation ACM, our club serves as an excellent
-            platform to build connections and grow professionally.
+            technical needs of the job market.
           </p>
         </div>
 
