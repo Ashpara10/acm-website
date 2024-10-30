@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { BlurFade } from "@/components/ui/BlurFade";
 import { remark } from "remark";
 import html from "remark-html";
 interface FAQProps {
@@ -48,15 +49,17 @@ export const FAQSection = () => {
   return (
     <section id="faq" className="container md:w-[700px] py-24 sm:py-32">
       <div className="text-center mb-8">
+      <BlurFade delay={0.25} inView>
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
           FAQS
         </h2>
-
+        </BlurFade>
+        <BlurFade delay={0.25 * 2} inView>
         <h2 className="text-3xl md:text-4xl text-center font-bold">
           Common Questions
-        </h2>
+        </h2></BlurFade>
       </div>
-
+      <BlurFade delay={0.25 * 3} inView>
       <Accordion type="single" collapsible className="AccordionRoot">
         {FAQList.map(async ({ question, answer, value }) => {
           const processedContent = await remark().use(html).process(answer);
@@ -77,6 +80,7 @@ export const FAQSection = () => {
           );
         })}
       </Accordion>
+      </BlurFade>
     </section>
   );
 };

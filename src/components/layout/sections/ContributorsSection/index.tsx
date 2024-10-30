@@ -1,5 +1,6 @@
 "use client";
 import TopContributorCard from "@/components/layout/sections/ContributorsSection/TopContributorCard";
+import { BlurFade } from "@/components/ui/BlurFade";
 import RedirectPageBtn from "@/components/ui/RedirectPageBtn";
 import { fetchContributors } from "@/lib/services/fetchContributors";
 import { ContributorProps } from "@/lib/types";
@@ -35,31 +36,38 @@ const ContributorsSection = ({ limit }: ContributorsSectionProps) => {
         }`}
       >
         <div className="text-center mb-8">
-          <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-            Developers
-          </h2>
-
-          <h2 className="text-3xl md:text-4xl text-center font-bold">
-            The Creators Of This Realm
-          </h2>
+          <BlurFade delay={0.25} inView>
+            <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
+              Developers
+            </h2>
+          </BlurFade>
+          <BlurFade delay={0.25 * 2} inView>
+            <h2 className="text-3xl md:text-4xl text-center font-bold">
+              The Creators Of This Realm
+            </h2>
+          </BlurFade>
         </div>
-        <div className="w-full md:px-0 px-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3">
-          {isLoading
-            ? [...Array(limit || 8)].map((_, i) => {
-                return (
-                  <div
-                    key={i}
-                    className="w-full h-[82px] animate-pulse rounded-lg bg-neutral-200 dark:bg-card"
-                  />
-                );
-              })
-            : contributorsData?.slice(0, limit).map((c) => {
-                return <TopContributorCard key={c?.id} contributor={c} />;
-              })}
-        </div>
+        <BlurFade delay={0.25 * 3} inView>
+          <div className="w-full md:px-0 px-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            {isLoading
+              ? [...Array(limit || 8)].map((_, i) => {
+                  return (
+                    <div
+                      key={i}
+                      className="w-full h-[82px] animate-pulse rounded-lg bg-neutral-200 dark:bg-card"
+                    />
+                  );
+                })
+              : contributorsData?.slice(0, limit).map((c) => {
+                  return <TopContributorCard key={c?.id} contributor={c} />;
+                })}
+          </div>
+        </BlurFade>
       </section>
       {pathname === "/" && (
-        <RedirectPageBtn href="/contributors" text="View All Contributors" />
+        <BlurFade delay={0.25 * 4} inView>
+          <RedirectPageBtn href="/contributors" text="View All Contributors" />
+        </BlurFade>
       )}
     </>
   );
