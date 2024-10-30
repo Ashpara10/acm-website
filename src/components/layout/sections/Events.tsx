@@ -1,5 +1,6 @@
 "use client";
 import EventCard from "@/components/event-card";
+import { BlurFade } from "@/components/ui/BlurFade";
 import RedirectPageBtn from "@/components/ui/RedirectPageBtn";
 import { TEvent } from "@/lib/types";
 import { usePathname } from "next/navigation";
@@ -17,14 +18,19 @@ const Events: FC<EventsProps> = ({ data }) => {
       <section className="container w-full mt-[80px]">
         <div className="text-center mb-8">
           {pathname && pathname === "/" ? (
-            <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-              Upcoming & Latest Events
-            </h2>
+            <BlurFade delay={0.25} inView>
+              <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
+                Upcoming & Latest Events
+              </h2>
+            </BlurFade>
           ) : null}
-          <h2 className="text-3xl md:text-4xl text-center font-bold">
-            {pathname === "/" ? "Our Amazing Events" : "Our Amazing Events"}
-          </h2>
+          <BlurFade delay={0.25 * 2} inView>
+            <h2 className="text-3xl md:text-4xl text-center font-bold">
+              {pathname === "/" ? "Our Amazing Events" : "Our Amazing Events"}
+            </h2>
+          </BlurFade>
         </div>
+        <BlurFade delay={0.25 * 3} inView>
         <div className="grid  md:grid-cols-2 lg:grid-cols-3 mt-10 gap-6">
           {pathname === "/"
             ? latestEventsData?.map((event) => (
@@ -32,9 +38,12 @@ const Events: FC<EventsProps> = ({ data }) => {
               ))
             : data?.map((event) => <EventCard key={event.id} {...event} />)}
         </div>
+        </BlurFade>
       </section>
       {pathname === "/" && (
+        <BlurFade delay={0.25} inView>
         <RedirectPageBtn href="/events" text="View All Events" />
+        </BlurFade>
       )}
     </>
   );
