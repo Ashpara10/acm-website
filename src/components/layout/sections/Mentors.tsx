@@ -79,7 +79,7 @@ export const Mentors = () => {
                       key={index}
                       href={url}
                       target="_blank"
-                      className="hover:opacity-80 transition-all"
+                      className="hover:opacity-80 transition-all hover:-translate-y-1"
                     >
                       {getSocialIcon(name)}
                     </Link>
