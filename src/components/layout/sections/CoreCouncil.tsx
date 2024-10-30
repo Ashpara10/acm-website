@@ -42,7 +42,7 @@ export const TeamSection = () => {
       className={
         pathname === "/team"
           ? "container py-16"
-          : "container lg:w-[75%] py-24 sm:py-32"
+          : "container w-full py-24 sm:py-32"
       }
     >
       <div className="text-center mb-8">
@@ -58,7 +58,9 @@ export const TeamSection = () => {
         </BlurFade>
       </div>
       <BlurFade delay={0.25 * 3} inView>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="w-full flex items-center justify-center">
+
+        <div className="grid w-full max-w-6xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {councilCoreData?.map(
             (
               { imageUrl, firstName, lastName, positions, socialNetworks },
@@ -110,6 +112,7 @@ export const TeamSection = () => {
               </Card>
             )
           )}
+        </div>
         </div>
       </BlurFade>
     </section>

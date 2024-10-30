@@ -101,7 +101,7 @@ export const TestimonialSection = () => {
       </div>
       <BlurFade delay={0.25 * 3} inView>
         <div className="w-full flex items-center justify-center">
-          <div className="w-full  md:max-w-[80%] grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="w-full max-w-6xl grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {reviewList?.map((review) => (
               <Card
                 key={review.name}
