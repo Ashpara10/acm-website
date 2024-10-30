@@ -101,7 +101,7 @@ export const TeamSection = () => {
                       key={index}
                       href={url}
                       target="_blank"
-                      className="hover:opacity-80 transition-all hover:-translate-y-1"
+                      className=" hover:-translate-y-1 hover:opacity-80 transition-all"
                     >
                       {getSocialIcon(name)}
                     </Link>
