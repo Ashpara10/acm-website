@@ -10,12 +10,9 @@ attending: 132
 description: "Mastering JavaScript was a free online workshop designed to introduce participants to the fundamentals and practical applications of JavaScript. Led by Mr. Swayam Prajapat, an experienced full-stack developer"
 images:
   [
-    "/events/ainnovate/ss1.webp",
-    "/events/ainnovate/ss2.webp",
-    "/events/ainnovate/ss3.webp",
-    "/events/ainnovate/ss4.webp",
-    "/events/ainnovate/ss5.webp",
-    "/events/ainnovate/ss6.webp",
+    "/events/basics-of-javascript/js-1.jpg",
+    "/events/basics-of-javascript/js-2.jpg",
+    "/events/basics-of-javascript/js-3.jpg",
   ]
 ---
 
