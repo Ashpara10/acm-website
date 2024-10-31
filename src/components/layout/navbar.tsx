@@ -61,8 +61,8 @@ export const Navbar = () => {
 
   return (
     <header className="container sticky top-5 z-40">
-      <BlurFade delay={0.15} inView>
-        <nav className="shadow-inner bg-opacity-15 border border-secondary rounded-2xl flex justify-between items-center py-2 px-2.5 md:px-4 bg-card/50 backdrop-blur-lg">
+      <BlurFade delay={0.05} inView> {/* Reduced delay */}
+        <nav className="shadow-inner bg-opacity-15 border border-secondary rounded-2xl flex justify-between items-center py-2 px-2.5 md:px-4 bg-card/50 backdrop-blur-lg backdrop-filter bg-white/30 border border-white/30">
           <Link href="/">
             <Image
               src="/logo.png"
@@ -132,7 +132,6 @@ export const Navbar = () => {
                       href={href}
                       className="text-base px-2 transition-all duration-300 hover:bg-primary/30 py-1.5 rounded-md"
                     >
-                      {/* shadow-lg hover:shadow-blue-500/50 */}
                       {label}
                     </Link>
                   </NavigationMenuLink>
