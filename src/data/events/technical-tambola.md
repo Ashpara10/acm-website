@@ -26,7 +26,7 @@ description: "Digital Marketing with AI explores the intersection of AI and digi
 
 ## Key Highlights
 
-- **Fun and Engaging**: Technical Tambola 3.0 provided a enjoyable and interactive way for students to learn technical terms.
+- **Fun and Engaging**: Technical Tambola 3.0 provided an enjoyable and interactive way for students to learn technical terms.
 - **Technical Twist**: The use of technical terms in the game added an educational element to the event.
 - **Prizes and Merchandise**: The distribution of prizes and ACM merchandise motivated participants and encouraged their involvement.
 - **Positive Experience**: The event was well-received by the audience, fostering a positive and enjoyable atmosphere.
