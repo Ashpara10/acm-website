@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
 import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import GithubIcon from "../icons/github-icon";
+import { BlurFade } from "../ui/BlurFade";
 import { Button } from "../ui/button";
 import {
   NavigationMenu,
@@ -21,7 +22,6 @@ import {
   SheetTrigger,
 } from "../ui/sheet";
 import { ToggleTheme } from "./toogle-theme";
-import { BlurFade } from "../ui/BlurFade";
 
 interface RouteProps {
   href: string;
@@ -58,11 +58,10 @@ const routeList: RouteProps[] = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-
   return (
-    <header className="container sticky top-5 z-40">
-      <BlurFade delay={0.15} inView>
-        <nav className="shadow-inner bg-opacity-15 border border-secondary rounded-2xl flex justify-between items-center py-2 px-2.5 md:px-4 bg-card/50 backdrop-blur-lg">
+    <header className="container sticky top-5 z-40 ">
+      <BlurFade delay={0.15} inView className="rounded-2xl backdrop-blur-lg ">
+        <nav className="shadow-inner bg-opacity-15 border border-secondary rounded-2xl flex justify-between items-center py-2 px-2.5 md:px-4 bg-card/50 ">
           <Link href="/">
             <Image
               src="/logo.png"
