@@ -33,6 +33,18 @@ const sponsors: sponsorsProps[] = [
     icon: "Cookie",
     name: "Hands on Javascript",
   },
+    {
+    icon: "Blockchain",
+    name: "Genesis",
+  },
+    {
+    icon: "Puzzle",
+    name: "Chakravyuh",
+  },
+    {
+    icon: "Graph",
+    name: "Digital Marketing",
+  },
 ];
 
 export const SponsorsSection = () => {

@@ -36,7 +36,7 @@ export const BenefitsSection = () => {
         <div className="w-full group overflow-hidden rounded-lg">
           <BlurFade delay={0.25} inView>
             <Image
-              src={"/about2.jpg"}
+              src={"/about.webp"}
               width={1200}
               height={1200}
               className="rounded-lg group-hover:scale-105 transition-transform duration-300"

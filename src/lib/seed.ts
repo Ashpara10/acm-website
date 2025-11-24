@@ -17,7 +17,7 @@
 //     cover: "/events/fastn.jpg",
 //     date: "2024-5-10",
 //     time: "1:00pm to 2:30pm",
-//     mode: "online",
+//     mode: "online", 
 //     attending: 100,
 // images: [
 //   "/events/fastn/ss1.JPG",
@@ -81,6 +81,42 @@
 //     attending: 100,
 //     about: `Leveraging AI Tools in Digital Marketing was a webinar on using artificial intelligence tools for digital marketing of a product, business or idea." "The speaker for the session was  Mr. Kaustubh Joshi, an IIM alumni. This event aimed to guide "s"tudents from different domains about the use of artificial intelligence for digital marketing, providing "h"ands-on demonstrations and valuable tips. In this event students learned about the latest AI advancements, shaping the digital marketing landscape, practical applications of AI tools for tasks like content creation, audience segmentation and campaign optimization etc.The event concluded with a QnA session with the speaker.
 
+// `,
+//   },
+//   {
+//     id: "7",
+//     title: "new1",
+//     cover: "/events/dm.jpg",
+//     date: "2024-7-6",
+//     time: "2:00pm to 3:00pm",
+//     mode: "online",
+//     attending: 100,
+//     about: `add new data1
+
+// `,
+//   },
+//   {
+//     id: "8",
+//     title: "new2",
+//     cover: "/events/dm.jpg",
+//     date: "2024-7-6",
+//     time: "2:00pm to 3:00pm",
+//     mode: "online",
+//     attending: 100,
+//     about: `add new data2
+//
+// `,
+//   },
+//   {
+//     id: "9",
+//     title: "new3",
+//     cover: "/events/dm.jpg",
+//     date: "2024-7-6",
+//     time: "2:00pm to 3:00pm",
+//     mode: "online",
+//     attending: 100,
+//     about: `add new data3
+//
 // `,
 //   },
 // ];
