@@ -2,30 +2,52 @@ import { AdvisoryTeamProps } from "@/lib/types";
 
 export const councilCoreData: AdvisoryTeamProps[] = [
   {
-    imageUrl: "/team/priyanka.webp",
-    firstName: "Priyanka",
-    lastName: "Toke",
+    imageUrl: "/team/Atharv_Untwale (President).webp",
+    firstName: "Atharv",
+    lastName: "Untwale",
     positions: ["President"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/priyanka-toke-762838215/",
+        url: "https://www.linkedin.com/in/atharv-untwale/",
       },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/atharvuntwale/?hl=en",
+      },
+      { name: "Github", url: "https://github.com/Atharv-Untwale" },
     ],
   },
   {
-    imageUrl: "/team/Damita_Pathak.webp",
-    firstName: "Damita",
-    lastName: "Pathak",
+    imageUrl: "/team/Hemant_Sharma_(Vice_President).webp",
+    firstName: "Hemant",
+    lastName: "Sharma",
     positions: ["Vice President"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/damita-pathak-4956262a2/",
+        url: "https://www.linkedin.com/in/hemant-sharma-3135b4290?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/damitapathak/profilecard/?igsh=MWZ0NDUxYzUyNHhrOQ==",
+        url: "https://www.instagram.com/__hemant1tt?igsh=MTQ2NjZrbXV3eWRmdQ==",
+      },
+      { name: "Github", url: "https://github.com/hemant2871" },
+    ],
+  },
+  {
+    imageUrl: "/team/Kasak Tolani (Vice President).jpg",
+    firstName: "Kasak",
+    lastName: "Tolani",
+    positions: ["Vice President"],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/kasak-tolani-51b5212aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/iiam_kasak?igsh=cmdhNWlzMmU5b2Rq",
       },
     ],
   },
@@ -74,51 +96,62 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/anugrah2.webp",
-    firstName: "Anugrah",
-    lastName: "Sharma",
+    imageUrl: "/team/Heenal_Jain(Operations_and_Management_Head).jpg",
+    firstName: "Heenal",
+    lastName: "Jain",
     positions: ["Operations Head"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/anu-g-rah/",
+        url: "https://www.linkedin.com/in/heenaljain?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/_heenal_21?igsh=dHQzcWhoaDVtOXRq",
       },
     ],
   },
   {
-    imageUrl: "/team/Vinayak_oberoi.webp",
-    firstName: "Vinayak",
-    lastName: "Oberoi",
+    imageUrl: "/team/Gaurang_Gupta_(PR_Head).JPG",
+    firstName: "Gaurang",
+    lastName: "Gupta",
     positions: ["PR Head"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/vinayak-oberoi-a26ba22b0/",
+        url: "https://www.linkedin.com/in/gaurang-gupta-131689275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/gaurang2908?igsh=MXlmczdpdWJiNGF5",
       },
     ],
   },
   {
-    imageUrl: "/team/riddhima.webp",
-    firstName: "Riddhima ",
-    lastName: "Kaushal",
+    imageUrl: "/team/Aditi_Agrahari_(Content_Head) .webp",
+    firstName: "Aditi",
+    lastName: "Agrahari",
     positions: ["Content Head"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/riddhima-kaushal-17092005rk/",
+        url: "www.linkedin.com/in/aditi-agrahari-45516632a",
       },
+      { name: "Github", url: "https://github.com/aditiagrahari18-jpg" },
     ],
   },
   {
-    imageUrl: "/team/Hemant_sharma.webp",
-    firstName: "Hemant",
-    lastName: "Sharma",
+    imageUrl: "/team/IKSHT_JAIN(GRAPHICS_HEAD).jpg",
+    firstName: "Ikshit",
+    lastName: "Jain",
     positions: ["Graphics Head"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/hemant-sharma-3135b4290/",
+        url: "https://www.linkedin.com/in/ikshit-jain-b80981287",
       },
+      { name: "Instagram", url: "https://instagram.com/ikshit.jain" },
+      { name: "Github", url: "https://github.com/ikshitjain" },
     ],
   },
   {
@@ -134,26 +167,34 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/kasak_tolani.webp",
-    firstName: "Kasak",
-    lastName: "Tolani",
+    imageUrl: "/team/Sabhyata_jain(PR_Cohead).jpg",
+    firstName: "Sabhyata",
+    lastName: "Jain",
     positions: ["PR Co-Head"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/kasak-tolani-51b5212aa/",
+        url: "https://www.linkedin.com/in/sabhyata-jain-275208322?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/sabhyataajain?igsh=MWd5bjdjODJwa2IzOQ==",
       },
     ],
   },
   {
-    imageUrl: "/team/Sakshi_Patil.webp",
-    firstName: "Sakshi",
-    lastName: "Patil",
+    imageUrl: "/team/Tarang_Choure_(Operation_Co_Head).webp",
+    firstName: "Tarang",
+    lastName: "Choure",
     positions: ["Operations Co-Head"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/sakshi-patil-617803220/",
+        url: "https://www.linkedin.com/in/tarang-choure-161ba132a?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/tarang_choure?igsh=NDMxamNxdmNqbWt2",
       },
     ],
   },

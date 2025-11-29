@@ -58,61 +58,60 @@ export const TeamSection = () => {
         </BlurFade>
       </div>
       <BlurFade delay={0.25 * 3} inView>
-      <div className="w-full flex items-center justify-center">
-
-        <div className="grid w-full max-w-6xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {councilCoreData?.map(
-            (
-              { imageUrl, firstName, lastName, positions, socialNetworks },
-              index
-            ) => (
-              <Card
-                key={index}
-                className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
-              >
-                <CardHeader className="p-0 gap-0">
-                  <div className="h-full overflow-hidden">
-                    <Image
-                      src={imageUrl}
-                      alt=""
-                      width={300}
-                      height={300}
-                      className="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
-                    />
-                  </div>
-                  <CardTitle className="py-3 pb-4 px-6">
-                    {firstName}
-                    <span className="text-primary ml-1">{lastName}</span>
-                  </CardTitle>
-                </CardHeader>
-                {positions.map((position, index) => (
-                  <CardContent
-                    key={index}
-                    className={`pb-0 text-muted-foreground ${
-                      index === positions.length - 1 && "pb-6"
-                    }`}
-                  >
-                    {position}
-                    {index < positions.length - 1 && <span>,</span>}
-                  </CardContent>
-                ))}
-
-                <CardFooter className="space-x-4 mt-auto">
-                  {socialNetworks.map(({ name, url }, index) => (
-                    <Link
+        <div className="w-full flex items-center justify-center">
+          <div className="grid w-full max-w-6xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {councilCoreData?.map(
+              (
+                { imageUrl, firstName, lastName, positions, socialNetworks },
+                index
+              ) => (
+                <Card
+                  key={index}
+                  className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
+                >
+                  <CardHeader className="p-0 gap-0">
+                    <div className="h-full overflow-hidden">
+                      <Image
+                        src={imageUrl}
+                        alt=""
+                        width={300}
+                        height={300}
+                        className="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
+                      />
+                    </div>
+                    <CardTitle className="py-3 pb-4 px-6">
+                      {firstName}
+                      <span className="text-primary ml-1">{lastName}</span>
+                    </CardTitle>
+                  </CardHeader>
+                  {positions.map((position, index) => (
+                    <CardContent
                       key={index}
-                      href={url}
-                      target="_blank"
-                      className=" hover:-translate-y-1 hover:opacity-80 transition-all"
+                      className={`pb-0 text-muted-foreground ${
+                        index === positions.length - 1 && "pb-6"
+                      }`}
                     >
-                      {getSocialIcon(name)}
-                    </Link>
+                      {position}
+                      {index < positions.length - 1 && <span>,</span>}
+                    </CardContent>
                   ))}
-                </CardFooter>
-              </Card>
-            )
-          )}
-        </div>
+
+                  <CardFooter className="space-x-4 mt-auto">
+                    {socialNetworks.map(({ name, url }, index) => (
+                      <Link
+                        key={index}
+                        href={url}
+                        target="_blank"
+                        className=" hover:-translate-y-1 hover:opacity-80 transition-all"
+                      >
+                        {getSocialIcon(name)}
+                      </Link>
+                    ))}
+                  </CardFooter>
+                </Card>
+              )
+            )}
+          </div>
         </div>
       </BlurFade>
     </section>

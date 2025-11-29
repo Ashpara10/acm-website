@@ -32,20 +32,19 @@ const Events: FC<EventsProps> = ({ data }) => {
         </div>
         <BlurFade delay={0.25 * 3} inView>
           <div className="w-full flex items-center justify-center">
-
-        <div className="grid max-w-6xl w-full  md:grid-cols-2 lg:grid-cols-3 mt-10 gap-6">
-          {pathname === "/"
-            ? latestEventsData?.map((event) => (
-              <EventCard key={event.id} {...event} />
-            ))
-            : data?.map((event) => <EventCard key={event.id} {...event} />)}
-        </div>
+            <div className="grid max-w-6xl w-full  md:grid-cols-2 lg:grid-cols-3 mt-10 gap-6">
+              {pathname === "/"
+                ? latestEventsData?.map((event) => (
+                    <EventCard key={event.id} {...event} />
+                  ))
+                : data?.map((event) => <EventCard key={event.id} {...event} />)}
             </div>
+          </div>
         </BlurFade>
       </section>
       {pathname === "/" && (
         <BlurFade delay={0.25} inView>
-        <RedirectPageBtn href="/events" text="View All Events" />
+          <RedirectPageBtn href="/events" text="View All Events" />
         </BlurFade>
       )}
     </>

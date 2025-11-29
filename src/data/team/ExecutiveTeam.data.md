@@ -24,8 +24,38 @@ technical:
     github: "https://github.com/KavyanshYadav"
     linkedin: "https://www.linkedin.com/in/kavyansh-yadav-a335a030a/"
     instagram: "__kavyanshyadav"
+  - name: "Hussain Hamid"
+    role: Executive Member
+    image: /executives/Hussain_hamid_technical_executive.jpg
+    github: "https://github.com/hussainhamid"
+    linkedin: "https://linkedin.com/in/hussainhamid12"
+    instagram: "hussainhamid_786"
+  - name: "Chandrabhan Kushwaha"
+    role: Executive Member
+    image: /executives/Chandrabhan_Kushwaha_Technical_Executive.jpg
+    github: "https://github.com/chandrabhan-kushwaha"
+    linkedin: "https://www.linkedin.com/in/chandrabhan-kushwaha-3a7987322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    instagram: "chandu_encrypted"
+  - name: "Saransh Sharma"
+    role: Executive Member
+    image: /executives/Saransh Sharma (Tech executive).jpg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/saransh-sharma-09699a316?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    instagram: "saranshd28"
 
 operations:
+  - name: Heenal jain
+    role: Operation Head
+    image: /executives/Heenal_Jain(Operations_and_Management_Head).jpg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/heenaljain?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    instagram: "_heenal_21"
+  - name: Tarang choure
+    role: Operation Co-head
+    image: /executives/Tarang Choure ( Operation Co-Head ).webp
+    github: ""
+    linkedin: "https://www.linkedin.com/in/tarang-choure-161ba132a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    instagram: "tarang_choure"
   - name: Atharv Untwale
     role: Sr. Executive Member
     image: /executives/Atharv_Untwale.webp
@@ -38,12 +68,6 @@ operations:
     github: "https://github.com/Anshwardhan"
     linkedin: "https://www.linkedin.com/in/anshwardhan-singh-solanki/"
     instagram: ""
-  - name: Heenal Jain
-    role: Executive Member
-    image: /executives/Heenal_Jain.webp
-    github: ""
-    linkedin: "https://www.linkedin.com/in/heenal-jain-8a250a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    instagram: "_heenal_21"
   - name: Pratham Punjabi
     role: Executive Member
     image: /executives/Pratham_Punjabi.webp
@@ -68,6 +92,36 @@ operations:
     github: ""
     linkedin: ""
     instagram: "mishra.jii7213"
+  - name: Ami jindal
+    role: Executive Member
+    image: /executives/Ami_Jindal_(Operation_Executive)-1.webp
+    github: ""
+    linkedin: "https://www.linkedin.com/in/ami-jindal-229678323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    instagram: "ami_jindal06"
+  - name: Atharv deshmukh
+    role: Executive Member
+    image: /executives/Atharv Deshmukh (op_executive).jpg
+    github: "https://github.com/vedantttdeshmukhhh"
+    linkedin: "https://www.linkedin.com/in/atharv-deshmukh-238303333/"
+    instagram: ""
+  - name: Atharv shukla
+    role: Executive Member
+    image: /executives/Atharv_Shukla(Operations_executive).jpg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/atharv-shukla-959476323?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    instagram: "atharv_shukla24"
+  - name: Suhani jain
+    role: Executive Member
+    image: /executives/SUHANI JAIN(OPERATION EXECUTIVE).jpg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/suhani-jain-51a9b1374"
+    instagram: "suhani_jain_319"
+  - name: Trupti warkhede
+    role: Executive Member
+    image: /executives/SUHANI JAIN(OPERATION EXECUTIVE).jpg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/trupti-warkhede-4429b2378?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    instagram: ""
 
 pr:
   - name: Tarang Choure
