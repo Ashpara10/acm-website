@@ -76,22 +76,22 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
-    imageUrl: "/team/ashwin_parande.webp",
-    firstName: "Ashwin ",
-    lastName: "Parande",
+    imageUrl: "/team/Yash_Thakur.webp",
+    firstName: "Yash",
+    lastName: "Thakur",
     positions: ["Technical Head"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/ashwin-parande-657653294/",
+        url: "https://www.linkedin.com/in/yash-thakur-b1a6432a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
         name: "Github",
-        url: "https://github.com/Ashpara10/",
+        url: "https://github.com/Y-ash-Thakur",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/ashhhwwinnn/",
+        url: "https://www.instagram.com/y_ash.thakur",
       },
     ],
   },
@@ -112,6 +112,22 @@ export const councilCoreData: AdvisoryTeamProps[] = [
     ],
   },
   {
+    imageUrl: "/team/Tarang_Choure_(Operation_Co_Head).webp",
+    firstName: "Tarang",
+    lastName: "Choure",
+    positions: ["Operations Co-Head"],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/tarang-choure-161ba132a?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/tarang_choure?igsh=NDMxamNxdmNqbWt2",
+      },
+    ],
+  },
+  {
     imageUrl: "/team/Gaurang_Gupta_(PR_Head).JPG",
     firstName: "Gaurang",
     lastName: "Gupta",
@@ -124,6 +140,22 @@ export const councilCoreData: AdvisoryTeamProps[] = [
       {
         name: "Instagram",
         url: "https://www.instagram.com/gaurang2908?igsh=MXlmczdpdWJiNGF5",
+      },
+    ],
+  },
+  {
+    imageUrl: "/team/Sabhyata_jain(PR_Cohead).jpg",
+    firstName: "Sabhyata",
+    lastName: "Jain",
+    positions: ["PR Co-Head"],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/sabhyata-jain-275208322?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/sabhyataajain?igsh=MWd5bjdjODJwa2IzOQ==",
       },
     ],
   },
@@ -163,38 +195,6 @@ export const councilCoreData: AdvisoryTeamProps[] = [
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/aadeesh-jain-486a882a3/",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/Sabhyata_jain(PR_Cohead).jpg",
-    firstName: "Sabhyata",
-    lastName: "Jain",
-    positions: ["PR Co-Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/sabhyata-jain-275208322?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/sabhyataajain?igsh=MWd5bjdjODJwa2IzOQ==",
-      },
-    ],
-  },
-  {
-    imageUrl: "/team/Tarang_Choure_(Operation_Co_Head).webp",
-    firstName: "Tarang",
-    lastName: "Choure",
-    positions: ["Operations Co-Head"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/tarang-choure-161ba132a?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/tarang_choure?igsh=NDMxamNxdmNqbWt2",
       },
     ],
   },

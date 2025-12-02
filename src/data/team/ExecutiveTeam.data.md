@@ -6,12 +6,6 @@ technical:
     github: "https://github.com/Vigya-G"
     linkedin: "https://www.linkedin.com/in/vigya-gupta-24a493289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     instagram: "imvigya"
-  - name: Yash Thakur
-    role: Executive Member
-    image: /executives/Yash_Thakur.webp
-    github: "https://github.com/Y-ash-Thakur"
-    linkedin: "https://www.linkedin.com/in/yash-thakur-b1a6432a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    instagram: "y_ash.thakur"
   - name: Suveg Kali
     role: Executive Member
     image: /executives/Suveg_Kali.webp
@@ -44,18 +38,6 @@ technical:
     instagram: "saranshd28"
 
 operations:
-  - name: Heenal jain
-    role: Operation Head
-    image: /executives/Heenal_Jain(Operations_and_Management_Head).jpg
-    github: ""
-    linkedin: "https://www.linkedin.com/in/heenaljain?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-    instagram: "_heenal_21"
-  - name: Tarang choure
-    role: Operation Co-head
-    image: /executives/Tarang Choure ( Operation Co-Head ).webp
-    github: ""
-    linkedin: "https://www.linkedin.com/in/tarang-choure-161ba132a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-    instagram: "tarang_choure"
   - name: Atharv Untwale
     role: Sr. Executive Member
     image: /executives/Atharv_Untwale.webp
@@ -160,6 +142,36 @@ pr:
     github: ""
     linkedin: "https://www.linkedin.com/in/aadik-jain-96b571175?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     instagram: ""
+  - name: Aarushi Vyas
+    role: Executive Member
+    image: /executives/Aarushi_vyas(pr executive).jpg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/aarushi-vyas-577293330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    instagram: "_.aaruxhi"
+  - name: Janhavi Soni
+    role: Executive Member
+    image: /executives/Janhavi_Soni(PR_Executive).jpg
+    github: ""
+    linkedin: "https://linkedin.com/in/janhavi-soni-071016376"
+    instagram: "janhavi_soni.25"
+  - name: Mahi Sambhare
+    role: Executive Member
+    image: /executives/Mahi Sambhare ( PR EXECUTIVE) .jpg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/mahi-sambhare-1b699339a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    instagram: "maahi_raoo_"
+  - name: Shaurya Mehra
+    role: Executive Member
+    image: /executives/Shaurya Mehra (PR Executive).jpg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/mehra09"
+    instagram: "shaurya_m099"
+  - name: Tejaswi Sharma
+    role: Executive Member
+    image: /executives/Tejaswi_Sharma_(PR_Executive).jpeg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/tejaswi-parvesh-sharma-73319639b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    instagram: "tejaswisharma03_"
 
 graphics:
   - name: Heena Shah
@@ -186,6 +198,24 @@ graphics:
     github: "https://github.com/ikshitjain"
     linkedin: "https://www.linkedin.com/in/ikshit-jain-b80981287"
     instagram: "ikshit.jain"
+  - name: Aditya Malviya
+    role: Executive Member
+    image: "/executives/Aditya_malviya ( graphicsexecutive ) .jpg"
+    github: ""
+    linkedin: ""
+    instagram: ""
+  - name: Khanak Singh Mourya
+    role: Executive Member
+    image: "/executives/Khanaksinghmourya(graphicsexecutive).jpg"
+    github: ""
+    linkedin: "https://in.linkedin.com/in/w-khanak-s-m-7321b0345"
+    instagram: "khanak.s.m"
+  - name: Vaishnavi Patidar
+    role: Executive Member
+    image: "/executives/Vaishnavi_Patidar(Graphics_executive).jpg"
+    github: ""
+    linkedin: "https://www.linkedin.com/in/vaishnavi-patidar-b02560322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    instagram: "lensly_._"
 
 videoEditing:
   - name: Kalash Kale
@@ -194,6 +224,12 @@ videoEditing:
     github: "https://github.com/KalashKale"
     linkedin: "https://www.linkedin.com/in/kalashkale/"
     instagram: "kalash256bytes"
+  - name: Raghav Toshinwal
+    role: Executive Member
+    image: /executives/Raghav toshniwal ( editing executive).jpg
+    github: ""
+    linkedin: "https://www.linkedin.com/in/raghav-toshniwal-235674331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    instagram: "raghavtoshniwal17"
 
 content:
   - name: Aayan Pandit
@@ -208,10 +244,16 @@ content:
     github: "-"
     linkedin: "https://www.linkedin.com/in/kshiteesh-joshi-96001b299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     instagram: "kshiteesh_joshi"
-  - name: Aditi Agrahari
+  - name: Prerna Dixit
     role: Executive Member
-    image: /executives/Aditi_Agrahari.webp
+    image: /executives/prerna_dixit_content_executive.jpeg
+    github: "https://github.com/prerna-dixit"
+    linkedin: "https://www.linkedin.com/in/prerna-dixit-5860a7354/"
+    instagram: "prer.naaaah"
+  - name: Raksha Shah
+    role: Executive Member
+    image: /executives/Raksha.jpg
     github: ""
-    linkedin: "https://www.linkedin.com/in/aditi-agrahari-45516632a/"
-    instagram: ""
+    linkedin: "https://www.linkedin.com/in/raksha-shah-02b722324?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    instagram: "shah_raksha20"
 ---

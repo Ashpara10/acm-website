@@ -1,4 +1,5 @@
 # Understanding Open Source
+
 ![opengraph 9dc60c9d](https://github.com/user-attachments/assets/50bdc4c9-1cd2-45cd-84b5-1ec362f8e903)
 
 # Contribution Rules📚:
@@ -30,7 +31,8 @@ cd acm-website
 ```markdown
 git checkout -b my-new-branch
 ```
-- Stage your changes 
+
+- Stage your changes
 <!--- - Add your name to `contributors/contributorsList.js`. -->
 
 ```markdown
@@ -55,7 +57,7 @@ git push origin my-new-branch
 
 ## Avoid Conflicts {Syncing your fork}
 
-An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PRs may be merged while you're working on your branch/fork.   
+An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PRs may be merged while you're working on your branch/fork.
 
 ```terminal
 git remote add upstream https://github.com/<your-username>/acm-website.git
@@ -77,4 +79,4 @@ This will give you any eventual conflicts and allow you to easily solve them in 
 
 For more information on syncing forks, [read this article from GitHub](https://help.github.com/articles/syncing-a-fork/).
 
-## Our Top Contributors 
+## Our Top Contributors
