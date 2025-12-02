@@ -17,7 +17,7 @@ export const HeroSection = () => {
               <span className="mr-2 text-primary">
                 <Badge>New Event</Badge>
               </span>
-              <span> Hackoctber Fest! </span>
+              <span> Coming Soon! </span>
             </Badge>
           </BlurFade>
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
@@ -45,7 +45,7 @@ export const HeroSection = () => {
               width={1200}
               height={1200}
               className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
-              src={"/banner.webp"}
+              src={"/banner1.webp"}
               alt="dashboard"
             />
           </BlurFade>
